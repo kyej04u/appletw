@@ -1,0 +1,123 @@
+#main { width:100%; min-width:980px; margin:0 0 10px; clear:both; color:#76797c; overflow:hidden; }
+#content,
+#headlines,
+#homefooter { width:980px; margin:0 auto; padding:0; }
+
+
+/* billboard */
+#billboard { text-align:center; }
+#billboard h1,
+#billboard h2 { margin-bottom:0; line-height:1; }
+#billboard h1 img,
+#billboard h2 img { display:block; margin:0 auto; }
+
+
+/* fancy billboards */
+#billboard .fancy { *width:972px; padding:3px; text-align:left; border:1px solid; border-color:#e5e5e5 #dbdbdb #d2d2d2; background:#fff;
+	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+	-webkit-box-shadow:rgba(0,0,0,.45) 0 1px 3px; -moz-box-shadow:rgba(0,0,0,.45) 0 1px 3px; box-shadow:rgba(0,0,0,.45) 0 1px 3px; box-shadow:rgba(0,0,0,.45) 0 1px 6px \0/IE9;
+}
+#billboard .fancy:nth-child(1n) { border:none; } /* reset border for smart browsers */
+#billboard .fancy a.block { *overflow:hidden; margin:0; zoom:1; background:#fafafa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(.5, #fafafa), to(#f2f2f2));
+	background:-webkit-linear-gradient(top, #fafafa 50%, #f2f2f2);
+	background:-moz-linear-gradient(top, #fafafa 50%, #f2f2f2);
+}
+#billboard .fancy a.block:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+#billboard .fancy a.block:hover { background:#fdfdfd;
+	background:-webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#fafafa));
+	background:-webkit-linear-gradient(top, #fdfdfd, #fafafa);
+	background:-moz-linear-gradient(top, #fdfdfd, #fafafa);
+}
+
+
+/* promos */
+.promos ul { width:992px; height:157px; margin:0 -1px -2px -11px; _position:relative; zoom:1; }
+.promos ul li { display:inline; float:left; width:237px; height:155px; margin-left:11px;
+	-webkit-box-shadow:rgba(0,0,0,.4) 0 1px 3px; -moz-box-shadow:rgba(0,0,0,.4) 0 1px 3px; box-shadow:rgba(0,0,0,.4) 0 1px 3px; box-shadow:rgba(0,0,0,.4) 0 1px 6px \0/IE9;
+	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+.promos ul li a { display:block; background:#f5f5f5; border:1px solid; border-color:#e5e5e5 #dbdbdb #d2d2d2;
+	background:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eeeeee));
+	background:-webkit-linear-gradient(top, #fafafa, #eeeeee);
+	background:-moz-linear-gradient(top, #fafafa, #eeeeee);
+	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+.promos ul li a:nth-child(1n) { border-color:#fff; }
+.promos ul li a:hover { background:#fdfdfd;
+	background:-webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#fafafa));
+	background:-webkit-linear-gradient(top, #fdfdfd, #fafafa);
+	background:-moz-linear-gradient(top, #fdfdfd, #fafafa);
+}
+.promos ul li a img { display:block; border:2px solid #fff; behavior:url(/v/home/d/scripts/promo_iepngfix.htc);
+	-webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;
+}
+
+
+/* full bleed promos */
+.promos ul li.bleed a { border:none; background:none; }
+.promos ul li.bleed a img { border:none; background:none;
+	behavior:url(/global/scripts/lib/iepngfix.htc);
+	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+
+
+/* ticker */
+#headlines { position:relative; z-index:1; margin-bottom:14px; }
+#ticker { min-height:26px; border:1px solid #e6e6e6; _height:26px;
+	background-color:#f6f6f6;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#f5f5f5));
+	background-image:-moz-linear-gradient(center top, #fafafa 0%, #f5f5f5 100%);
+	background-image:-o-linear-gradient(#fafafa, #f5f5f5);
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px; 
+	border-radius:4px; 
+}
+#ticker p { float:left; width:100%; padding-top:5px; margin-bottom:3px; line-height:16px; }
+#ticker a { color:#4c4c4c; text-decoration:none; }
+#ticker a#ticker-headline { display:block; float:left; width:12.5em; margin-right:1em; border-right:1px solid #d4d4d4; color:#333; font-weight:bold; text-align:center; }
+#ticker a#news-link { position:relative; z-index:10; }
+#ticker-rss-link { display:none; }
+
+
+/* homefooter */
+#homefooter { margin:0 auto 22px; text-align:center; font-size:10px; color:#6e6e6e; }
+#homefooter .piped a { border-color:#ccc; }
+
+#homefooter #links { border:1px solid #e5e5e5; border-width:1px 0; padding:.5em 0; margin:1.5em 0 2em; zoom:1; }
+#homefooter #links:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#homefooter #links p { margin-bottom:0; }
+#homefooter #links p.left { float:left; width:auto; text-align:left; text-indent:10px; }
+#homefooter #links ul.right { float:right; padding-right:10px; margin-bottom:0; }
+#homefooter #links ul.piped a { padding-left:.5em; margin-left:.5em; }
+
+#homefooter p.left a { margin-right:0; }
+#homefooter p.left { width:50%; float:left; text-align:left; text-indent:10px; }
+#homefooter p.right { width:50%; float:right; }
+#homefooter p.links { border:1px solid #e5e5e5; border-width:1px 0; padding:.5em 0; margin:1.5em 0 2em; }
+
+#homefooter .sosumi { clear:both; }
+#homefooter .sosumi p { display:inline; margin-bottom:0; }
+#homefooter .sosumi p.copyright { padding-right:0.75em; }
+#homefooter .sosumi ul.piped { display:inline; margin-bottom:0; padding-right:1.2em; }
+#homefooter .sosumi ul.piped:after { display:none; }
+#homefooter .sosumi ul.piped li { float:none; }
+#homefooter .sosumi ul.piped li a.first { margin-right:-0.2em; }
+
+
+/* worldwide */
+#worldwide { display:inline; text-align:left; }
+#worldwide a { display:inline-block; padding:0 10px 0 6px; border:1px solid #e3e3e3; background:#f7f7f7;
+	*position:relative; *top:.9em;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(.4, #fff), color-stop(1, #f2f2f2));
+	background:-webkit-linear-gradient(top, #fff 40%, #f2f2f2 100%);
+	background:-moz-linear-gradient(top, #fff 40%, #f2f2f2 100%);
+	-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+}
+#worldwide a:hover { text-decoration:none; background:#fcfcfc;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(.4, #fff), color-stop(1, #fafafa));
+	background:-webkit-linear-gradient(top, #fff 40%, #fafafa 100%);
+	background:-moz-linear-gradient(top, #fff 40%, #fafafa 100%);
+}
+#worldwide a img { margin:-3px 6px 0 0; *margin-top:-1.8em; vertical-align:middle; }
+#worldwide a span.more { display:inline-block; padding:8px 10px 8px 5px; cursor:pointer; border-left:1px solid #e3e3e3; *background-position:100% 55%; }
