@@ -16,7 +16,7 @@ html { background-color:#fff; }
 
 img, .search-wrapper .left, .search-wrapper .right, ul.sp-results li.viewall a, ul.sp-results li .replacementimg, 
 #globalfooter #breadcrumbs, #globalfooter #breadcrumbs span, #directorynav .capbottom, 
-#productheader h1 a, #productheader h2 a, #main .maincap { behavior: url(/global/scripts/lib/iepngfix.htc); }
+#productheader h1 a, #productheader h2 a, #main .maincap { behavior: url(/appletw/2011/global/scripts/lib/iepngfix.htc); }
 
 img { border: 0; }
 img.left { float: left; margin: 2px 20px 16px 0; }
@@ -374,8 +374,8 @@ span.browsewebappss, span.businessstores, span.buyiphones, span.buynows, span.co
 }
 
 /* promofooter */
-#promofooter { width:984px; margin:18px auto 0; padding-top:17px; background:url(/promos/images/promofooter_top.png) no-repeat; zoom:1; _background-image:url(/promos/images/promofooter_top.gif); }
-#promofooter #promos { width:980px; margin-bottom:0; padding:0 2px 4px; background:url(/promos/images/promofooter_bottom.png) no-repeat 0 100%; zoom:1; _background-image:url(/promos/images/promofooter_bottom.gif); }
+#promofooter { width:984px; margin:18px auto 0; padding-top:17px; background:url(/appletw/2011/promos/images/promofooter_top.png) no-repeat; zoom:1; _background-image:url(/appletw/2011/promos/images/promofooter_top.gif); }
+#promofooter #promos { width:980px; margin-bottom:0; padding:0 2px 4px; background:url(/appletw/2011/promos/images/promofooter_bottom.png) no-repeat 0 100%; zoom:1; _background-image:url(/appletw/2011/promos/images/promofooter_bottom.gif); }
 #promofooter #promos:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
 #promofooter #promos li.promo { position:relative; float:left; width:244px; min-height:15em; _height:15em; padding-right:1px; margin-top:-16px; }
 #promofooter #promos li.promo a { color:#777; }
@@ -418,13 +418,13 @@ body {*font-family: Arial, Helvetica, sans-serif "新細明體"; }
 
 #promofooter #promos .promo.right p a { width:105px; left:121px; }
 
-#globalheader #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.png); _background-image:url(/tw/global/nav/images/globalnav_text.gif); }
+#globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.gif); }
 @media only screen and (max-device-width:768px) {
-       #globalheader #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.svg)); }
-       #globalheader.ios3 #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.png); }
+       #globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.svg)); }
+       #globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); }
 }
 
-#globalheader #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.png); _background-image:url(/tw/global/nav/images/globalnav_text.gif); }
-#globalheader.svg #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.svg); }
+#globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.gif); }
+#globalheader.svg #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.svg); }
 #globalheader.decelerate #globalnav li a span,
-#globalheader.ios3 #globalnav li a span { background-image:url(/tw/global/nav/images/globalnav_text.png); }
+#globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); }

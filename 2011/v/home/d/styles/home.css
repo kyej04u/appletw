@@ -49,7 +49,7 @@
 	background:-webkit-linear-gradient(top, #fdfdfd, #fafafa);
 	background:-moz-linear-gradient(top, #fdfdfd, #fafafa);
 }
-.promos ul li a img { display:block; border:2px solid #fff; behavior:url(/v/home/d/scripts/promo_iepngfix.htc);
+.promos ul li a img { display:block; border:2px solid #fff; behavior:url(/appletw/2011/v/home/d/scripts/promo_iepngfix.htc);
 	-webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;
 }
 
@@ -57,7 +57,7 @@
 /* full bleed promos */
 .promos ul li.bleed a { border:none; background:none; }
 .promos ul li.bleed a img { border:none; background:none;
-	behavior:url(/global/scripts/lib/iepngfix.htc);
+	behavior:url(/appletw/2011/global/scripts/lib/iepngfix.htc);
 	-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
 }
 

@@ -183,7 +183,7 @@ g=document.createDocumentFragment();e=document.createElement("li");g.appendChild
 if(this.data.url){d=document.createElement("a");d.href=decodeURIComponent(this.data.url);
 AC.addEvent(d,"mousedown",function(h){if(searchShortcut){searchShortcut.go(a.data.url)
 }});e.appendChild(d)}if(this.data.image){b=new Image();b.src=this.data.image;b.alt=this.data.title;
-d.appendChild(b);if(/MSIE (5\.5|6\.)/.test(navigator.userAgent)){b.src="/global/elements/blank.gif";
+d.appendChild(b);if(/MSIE (5\.5|6\.)/.test(navigator.userAgent)){b.src="/appletw/2011/global/elements/blank.gif";
 b.style.filter='progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+this.data.image+'",sizingMethod="scale")'
 }}if(this.data.truncated.title){f=document.createElement("h4");f.innerHTML=this.data.truncated.title;
 d.appendChild(f)}if(this.data.truncated.desc){c=document.createElement("p");c.innerHTML=this.data.truncated.desc;
