@@ -418,13 +418,13 @@ body {*font-family: Arial, Helvetica, sans-serif "新細明體"; }
 
 #promofooter #promos .promo.right p a { width:105px; left:121px; }
 
-#globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.gif); }
+#globalheader #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/global/nav/images/globalnav_text.gif); }
 @media only screen and (max-device-width:768px) {
-       #globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.svg)); }
-       #globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); }
+       #globalheader #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); }
+       #globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); }
 }
 
-#globalheader #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.gif); }
-#globalheader.svg #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.svg); }
+#globalheader #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); _background-image:url(/appletw/2011/global/nav/images/globalnav_text.gif); }
+#globalheader.svg #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); }
 #globalheader.decelerate #globalnav li a span,
-#globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/tw/global/nav/images/globalnav_text.png); }
+#globalheader.ios3 #globalnav li a span { background-image:url(/appletw/2011/global/nav/images/globalnav_text.png); }
