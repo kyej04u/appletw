@@ -1,0 +1,29 @@
+#main .zoomerlaycontent { display: none; }
+.zoomerlaycontent { position: relative; }
+
+.zoomerlay img.overlayPanelShadowImage { display: block; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; -webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px; -o-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; -webkit-box-shadow: rgba(0,0,0,0.5) 0 2px 7px; -moz-box-shadow: rgba(0,0,0,0.5) 0 2px 7px; }
+
+.zoomerlay .closeButtonContainer { top: -2px !important; left: -3px !important; }
+.zoomerlay a.close { background-image:url(/appletw/2011/global/elements/zoomerlay/zoomerlay_close.png) !important; _background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/appletw/2011/global/elements/zoomerlay/zoomerlay_close.png', sizingMethod='crop') !important; }
+
+.zoomerlay h2, .zoomerlay .footer { position: relative; z-index: 1001; }
+.zoomerlay h2 { margin: 0; border-bottom: 1px solid #3d3d3d; padding: 0 30px; text-align: center; color: #fefefe; text-shadow: rgba(0,0,0,0.5) 0 -1px 0; -webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px; -o-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; height: 24px; font-size: 11px; line-height: 24px; background: url(/appletw/2011/global/elements/zoomerlay/zoomerlay_headerbg.png) repeat-x; _background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/appletw/2011/global/elements/zoomerlay/zoomerlay_headerbg.png', sizingMethod='scale') !important; }
+.zoomerlay .footer { position: absolute; left: 0; bottom: 0; width: 100%; border-top: 1px solid #535353; padding: 8px 0; height: 55px; }
+
+.zoomerlay .mask { position: relative; margin: 0 !important; overflow: hidden; border: solid #5c5c5c; border-width: 0 1px; }
+.zoomerlay .mask img { display: block; position: absolute; cursor: pointer; cursor: url('/appletw/2011/global/elements/cursors/zoomin.png'), -moz-zoom-in; -webkit-user-select: none; -moz-user-select: none; }
+.zoomerlay .no-zoom .mask img { cursor: default; }
+
+.zoomerlay .mask .caption { position: absolute; margin: 0 10px; text-align: center; color: #fefefe; }
+
+.zoomerlay .footer { text-align: center; }
+.zoomerlay .footer a { display: inline-block; padding: 8px 10px; outline: none; }
+.zoomerlay .footer a img { display: block; -webkit-box-shadow: #000 0 1px 3px; }
+.zoomerlay .footer.nodrop a img { -webkit-box-shadow: none; }
+.zoomerlay .footer a.active { background: url(/appletw/2011/global/elements/zoomerlay/zoomerlay_activethumb.png) no-repeat; cursor: default; _background: none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/appletw/2011/global/elements/zoomerlay/zoomerlay_activethumb.png', sizingMethod='crop'); }
+.zoomerlay .footer a.active img { -webkit-box-shadow: none; }
+
+.zoomerlay .zoomed .mask img { cursor: url('/appletw/2011/global/elements/cursors/zoomout.png'), -moz-zoom-out; }
+/*.zoomerlay .grabcursor .mask img { cursor: url('/appletw/2011/global/elements/cursors/grab.png'), -moz-grab; }*/
+body.dragging, body.dragging .zoomerlay .zoomed .mask img { cursor: url('/appletw/2011/global/elements/cursors/grabbing.png'), -moz-grabbing; }
+.zoomerlay .zoomed .footer { background: #323232; background: rgba(50,50,50,.8); }

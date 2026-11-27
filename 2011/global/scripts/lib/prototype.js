@@ -666,7 +666,7 @@ Object.extend(String.prototype, (function() {
   }
 
   function underscore() {
-    return this.replace(/::/g, '/')
+    return this.replace(/::/g, '/appletw/2011/')
                .replace(/([A-Z]+)([A-Z][a-z])/g, '$1_$2')
                .replace(/([a-z\d])([A-Z])/g, '$1_$2')
                .replace(/-/g, '_')
@@ -684,8 +684,8 @@ Object.extend(String.prototype, (function() {
       }
       return '\\u00' + character.charCodeAt().toPaddedString(2, 16);
     });
-    if (useDoubleQuotes) return '"' + escapedString.replace(/"/g, '\\"') + '"';
-    return "'" + escapedString.replace(/'/g, '\\\'') + "'";
+    if (useDoubleQuotes) return '"' + escapedString.replace(/appletw/2011/"/g, '\\"') + '"';
+    return "'" + escapedString.replace(/appletw/2011/'/g, '\\\'') + "'";
   }
 
   function unfilterJSON(filter) {
@@ -696,7 +696,7 @@ Object.extend(String.prototype, (function() {
     var str = this;
     if (str.blank()) return false;
     str = str.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, '@');
-    str = str.replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']');
+    str = str.replace(/appletw/2011/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']');
     str = str.replace(/(?:^|:|,)(?:\s*\[)+/g, '');
     return (/^[\],:{}\s]*$/).test(str);
   }

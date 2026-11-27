@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW" lang="zh-TW">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+	<link id="globalheader-stylesheet" rel="stylesheet" href="/appletw/2011/global/nav/styles/navigation.css" type="text/css" />
+	<title>Apple - iPhone 4 - 手機、iPod、上網裝置。</title>
+	<meta name="omni_page" content="iPhone - Index" />
+	<meta name="Category" content="products,iphone" />
+	<meta name="Description" content="iPhone 4 不但是 GSM 手機，也是 iPod、視訊攝影機，以及具有電子郵件及 GPS 地圖的 Internet 行動裝置。" />
+	<script type="text/javascript">
+		var gomez = { gs: new Date().getTime(), acctId:'C2C738', pgId:'iPhone Tab Page', grpId:'' };
+	</script>
+		<script src="/appletw/2011/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	
+
+<script src="/appletw/2011/global/scripts/ac_media.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="/appletw/2011/global/styles/ac_media.css" type="text/css" />
+
+
+
+	
+<script src="/appletw/2011/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	if (typeof(tracker) == 'undefined') {
+		tracker = false;
+	}
+
+	Event.onDOMReady(function() {
+		if (!tracker) {
+			tracker = new AC.ViewMaster.Tracker('click');
+		}
+	});
+</script>
+
+
+
+	<script src="/appletw/2011/global/scripts/lib/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/ac_iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="/appletw/2011/tw/global/styles/base.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/global/styles/buystrip.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/iphone/styles/iphone.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/iphone/home/styles/home.css" type="text/css" />
+	<script type="text/javascript" charset="utf-8">		
+		Event.onDOMReady(function() {
+			var viewer = new AC.ViewMaster.SlideViewer($$('.heroimage'), 'herogallery', 'herolink', { shouldAnimateSlide:true, silentTriggers:true, animationDuration:1, useKeyboardNav: true, discontinuousPreviousNext: true, useTouchEvents: true });
+			var slideShow = new AC.ViewMaster.Slideshow(viewer, 'slideshow-link', { delay:5000, autoplay:true, stopOnContentTriggerClick:true });
+
+			// mask top corners for hero slides
+			if (AC.Detector.isCSSAvailable('border-radius')) {
+				var mainCapTop = new Element('div', { 'class': 'maincap top' });
+				$('hero').insert({ top: mainCapTop });
+			}
+		});
+	</script>
+	<script>
+	(function () {
+	    var appURL     = 'http://itunes.apple.com/tw/app/id375380948?mt=8',
+	        message    = 'Shop for Apple products, make Apple Retail Store appointments, and more.',
+	        tracking   = 'Apple Store App Download | retail',
+	        storageKey = 'AppleStoreAppBannerViews',
+	        viewLimit  = 3,
+
+	        node, banner, mask, closeButton, image, scrolled;
+
+	    function setup() {
+	        node = document.createElement('div');
+	        node.id = 'applestoreapp';
+	        banner = document.createElement('section');
+	        banner.innerHTML = '<div role="dialog" aria-label="Download the Apple Store app"><button class="close" aria-label="Close button"></button>'+
+	            '<a href="' + appURL + '" class="download icon" aria-label="Download the Apple Store app"></a>'+
+	            '<h1>Download the Apple Store app.</h1>'+
+	            '<span>' + message + ' <a href="' + appURL + '" class="download text"  aria-label="Download the Apple Store app">Download now</a></span></div>';
+	        node.appendChild(banner);
+	        mask = document.createElement('div');
+	        mask.id= 'applestoreapp-mask';
+
+	        var firstChild = document.documentElement.firstChild;
+	        document.documentElement.insertBefore(node, firstChild);
+	        document.documentElement.insertBefore(mask, firstChild);
+
+	        closeButton = document.querySelector('.close', node);
+	        closeButton.addEventListener('click', close, false);
+	        var downloadLinks = document.querySelectorAll('.download', node),
+	            len = downloadLinks.length,
+	            i;
+	        for (i=0; i<len; i++) {
+	            downloadLinks[i].addEventListener('click', download, true);
+	        }
+
+	        window.addEventListener('scroll', scroll, false);
+	        document.addEventListener('gesturestart', gestureevent, true);
+	        document.addEventListener('gesturechange', gestureevent, true);
+	        document.addEventListener('gestureend', gestureevent, true);
+
+	        reveal();
+	    }
+
+	    function scroll(event) {
+	        scrolled = true;
+	        var top = window.pageYOffset;
+	        banner.style.webkitTransition = '-webkit-transform ease 350ms';
+	        banner.style.webkitTransform = 'translateY(' + (Math.max(60, top)+20) + 'px)';
+	    }
+
+	    function gestureevent(event) {
+	        event.preventDefault();
+	        event.stopPropagation();
+	    }
+
+	    function reveal() {
+	        setTimeout(function () {
+	            node.className = 'revealed';
+	        }, 50);
+	        window.addEventListener('load', function () {
+	            if (scrolled)
+	                return;
+
+	            setTimeout(function () {
+	                window.scrollTo(0,1);
+	            }, 50);
+	        }, false);
+	    }
+
+	    function close() {
+	        var views = parseInt(localStorage.getItem(storageKey), 10) || 0;
+	        localStorage.setItem(storageKey, views + 1);
+	        hide();
+	    }
+
+	    function download(event) {
+			if (window.s) {
+				var s = window.s,
+					oldVar = s.eVar5;
+				s.eVar5 = tracking;
+				s.tl(event.target, 'o', tracking+' | '+event.target.className);
+				s.eVar5 = oldVar;
+			}
+	        localStorage.setItem(storageKey, viewLimit);
+	        hide();
+	    }
+
+	    function hide() {
+	        window.removeEventListener('scroll', scroll, false);
+	        document.removeEventListener('gesturestart', gestureevent, true);
+	        document.removeEventListener('gesturechange', gestureevent, true);
+	        document.removeEventListener('gestureend', gestureevent, true);
+
+	        var translateAmount = banner.style.webkitTransform;
+	        translateAmount = translateAmount ? translateAmount.match(/\(([^p]+)px/)[1] : 80;
+	        banner.style.webkitTransform = 'translateY('+(parseInt(translateAmount,10)-580)+'px)';
+	        setTimeout(function () {
+	            mask.parentNode.removeChild(mask);
+	            node.parentNode.removeChild(node);
+	        }, 350);
+	    }
+
+	    var intendedDevice = navigator.platform.indexOf('iPhone') === 0 || navigator.platform.indexOf('iPod') === 0;
+	    if (intendedDevice && localStorage.getItem(storageKey) < viewLimit)
+	        setup();
+	}());
+	</script>
+	<style type="text/css">
+	    html { position: relative; }
+	    #applestoreapp { -webkit-tap-highlight-color: rgba(0,0,0,0); position: absolute; z-index: 1000000; left: 0; right: 0; -webkit-text-size-adjust: none; }
+	    #applestoreapp section { display: block; width: 960px; height: 432px; -webkit-transform: translateY(-500px); -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.75); -webkit-border-radius: 15px; border: 3px solid #c7c7c7; position: absolute; -webkit-background-size: 96px 96px; left: 50%; top: 0; margin-left: -480px; 
+	        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABRxJREFUeNpMlgl25DgMQyV5qdS83P96yVSWG/SkvEnzQcjuOP2qbS0UCYKg8sfHR865pZRT2vd9miY+9TKO+3GM4/h8PodhKPG0WrUy59paPfbWElOtNaa8i/W11jKUrFWZ9fn7+3tdVz5SSlpX8rEfwzCu61Kwm2U0pca7NmCLFUM+jgMTfNZWU0slXOQwrB/hFrP88Zk/Pz+xfdSK757W0bnwypEsPfa9xE5GWTYwhdGYSv3Rqdu+49nL/YWV27Yp3IisvLy8sMSjxOgJrPMCGIzPtzneE+O3ecY6L7iHK96FN7kUXljJILOcjS05hLtEkAJWJo5jB2QiZQKjvAiH1LZ9AweHKOs5Gw17wycge2SeJxLDCOc5PWC93m43A0fcw5DiPP5pM6YZn8ZpWZYh0oBRFtsn+8iIQM95HEYyQfJwZZ5ncSFy8IXj3uYzcXLoId/GGAkcMtvwRqYJrpTn8sRiFZx1EM8GYuVYpliGUxiyQ+SzOlmcK55FnudpAnay4owxy4uXVYFf/7nfm1wZcFbfTQxmyo5muVE6Mw0fDkKYbe/RbCJi4oX9BsFx8IndXY8MKfWt+QwnKawdkVGN5F5oQSk2yakTaxsqEbJhvYJwDphlcA/CGAYjqYrjd9tEga+vLwgMmhcZfECH2yDGYTw2TTR2JQjdeWU/Xl9fl+VZyLapvG8RQclg553eUBxB1Ie9XRdxI7XQlPhTSpsq/IKOU4PlwZdxLK4DDrBpzsec67PFzj247E+/KGm5WAMc1s/PD6XKAfCYvY4mRfIYZzD/+3iUGBIvyScpChqwAo8okYtFzpOJ78hUNZwXZLMThtGodjBa6M+Vn/W5MIqCMgJTQxdUB1dtnzzRxKqct6jbPYeg2nfAYKQXEBB5teQwTFzn8cl/4zj8+fMf8TqlSap+BFmri46sztNsr0FMiUQhMDQCRs3v7++ueHN5KKdyxScESyH61hZhFTCXU444ww1D7udExBL28I84JBifX5+YcJls20qlQfjkaCUsq3lNMkx259bMkf5EYq2gNKhtXZ0w+bRviJgajpeqNCO9wJpc6OHRVQGXdmK9d65ChSazoAdxcsEYqE5DoHqJqb0o6i6TRBOI77/rjp23+eY8IQaARXAo0uWB+YM1d9D8eDxOfDbDZy8sLDZa40kR2jSMe93dL6M5V1WGttB81NLN10ublXrLmRJyWrcK8U6luHOZpkZSmQxnlQA0ufer5FNtwblRP3h7e/tdIJiy/LACzoHGsi4ubwsOnPHmq3Q8wqeqUsdXlzEMlCu6RkQj9YO79q7HGNeP9gsrZHLokhUKfxyT+0E9ABnJiuiVP+4AiIHuF9NN4FiK7/f71Y8osSO6VYpom/s20AUCIHGytuL7GgTlSKj5V9JBFbm+euRwXk+u3mA+uKRpVnjzG0+iJ+9mFPlZ8Mzo5VQSYhwyLhZGQflM03lbfSfoAh73l4ZrzrZJJc1ZtMtN0F4GsLrWRa8OXhDBqT+SAOtaByrKIp+1czYfZEPC3sJrJ+zC5G9wUeS6M6JFLg072yOgmrjLyEt+lEyyN8a11SZ+160EjoZY8tVKbdBXodGMjIx1Qcc6FqkAoFRZtb6v96xWMeeEmX7BpXobp078IBsrYapY4FHLt9Xc1Sgtqrqzgonj9RWG5u+bQG9wxaU6ESnEI3lwz4MsU6DkwNpk1XTtEDXHmuD2SBfxUDT5AU1KNhT8qh7R2iJqeDGx+hLN/P8CDADwDFhdeenUVAAAAABJRU5ErkJggg==); }
+	    #applestoreapp div { width: 854px; height: 211px; padding: 215px 50px 0; border: 3px solid white; -webkit-border-radius: 12px; position: relative; background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.1)), to(rgba(0,0,0,0.1))); text-align: center; font-family: "Helvetica Neue"; text-shadow: 0 3px 0 rgba(255,255,255,0.6); line-height: 1.35; color: #333; }
+	    #applestoreapp h1 { font-size: 54px; font-weight: bold; color: #000; }
+	    #applestoreapp span { font-size: 39px; }
+	    #applestoreapp.revealed section { -webkit-transform: translateY(80px); -webkit-transition: -webkit-transform ease 1s;}
+	    #applestoreapp a.download.icon { -webkit-background-size: 180px 180px; position: absolute; left: 50%; top: 22px; margin-left: -95px; width: 190px; height: 190px;
+	        background: url(data:image/png;base64,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) 50% 50% no-repeat;
+	        -webkit-box-reflect:below -8px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.875, transparent), to(rgba(255,255,255,0.4)));}
+	    #applestoreapp a.download.text { padding-right: 20px;
+	        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAcCAYAAAC6YTVCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN1JREFUeNpiYOg4Y/D//38GUjATAwNDP2Pn2QQGEgATlJ5PikYmblYmTlI1MsnysUkj8YnSyIRFjKBGJhzieDUy4TEQp0YmAs7HqpGJiMDC0MhEZNSgaGQiISHANbIwkAZAGj8wkajpAhAfINomNSGOLyv8FFsMxbk+sBCr4Ui0+gVRLpYcIPclEwka/gC5d0BOZCJRQyEQf2EiVQPOeMKnAasmQhowNBGjAUUTsRrgmkjRAE57aoIcr+d4yj8gVgMIMAILv34gbUCsBmQ/Ea0BljVAGhYSqwEEAAIMAGlkksp+bkKfAAAAAElFTkSuQmCC) 100% 75% no-repeat;}
+	    #applestoreapp button.close { width: 80px; height: 80px; padding: 0; position: absolute; top: 0px; left: 0px; display: block; border: none; -webkit-background-size: 56px 56px; -webkit-appearance: none;
+	        background: url(data:image/png;base64,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) center no-repeat; }
+	    #applestoreapp-mask { position: absolute; z-index: 999999; left: 0; right: 0; top: 55px; bottom: 0; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+	</style>
+</head>
+<body id="overview">
+	<script type="text/javascript">
+	var searchSection = 'iphone';
+	var searchCountry = 'tw';
+</script>
+<script src="/appletw/2011/global/nav/scripts/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<nav id="globalheader" class="iphone">
+	<!--googleoff: all-->
+	<ul id="globalnav" role="navigation">
+		<li id="gn-apple"><a href="/appletw/2011/tw/"><span>Apple</span></a></li>
+		<li id="gn-store"><a href="http://store.apple.com/tw/"><span>購買</span></a></li>
+		<li id="gn-mac"><a href="/appletw/2011/tw/mac/"><span>Mac</span></a></li>
+		<li id="gn-ipod"><a href="/appletw/2011/tw/ipod/"><span>iPod</span></a></li>
+		<li id="gn-iphone"><a href="/appletw/2011/tw/iphone/"><span>iPhone</span></a></li>
+		<li id="gn-ipad"><a href="/appletw/2011/tw/ipad/"><span>iPad</span></a></li>
+		<li id="gn-itunes"><a href="/appletw/2011/tw/itunes/"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="/appletw/2011/tw/support/"><span>支援服務</span></a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/search/" method="post" class="search" id="g-search"><div class="sp-label">
+			<label for="sp-searchtext">Search</label>
+			<input type="text" name="q" id="sp-searchtext" accesskey="s" />
+		</div></form>
+		<div id="sp-magnify"><div class="magnify-searchmode"></div><div class="magnify"></div></div>
+		<div id="sp-results"></div>
+	</div>
+</nav>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+
+
+
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName()+" (TW)";
+s.server=""
+s.channel="www.tw.ip"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=document.URL;
+s.prop5=""
+s.charSet="UTF-8"
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+
+s.linkInternalFilters="javascript:,apple.com/tw/"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+	<div id="productheader">
+	<h2><a href="/appletw/2011/tw/iphone/" class="replaced">iPhone</a></h2>
+	<ul id="productnav">
+		<li id="pn-sfeatures"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/features/">功能特色</a></li>
+		<li id="pn-design"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/design/">設計</a></li>
+		<li id="pn-apps"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/apps-for-iphone/">iPhone 應用程式</a></li>
+		<li id="pn-gallery"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/gallery/">圖庫</a></li>
+		<li id="pn-specs"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/specs.html">技術規格</a></li>
+		<li id="pn-buynow"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/buy/" title="Buy iPhone 4" class="replaced buy">購買 iPhone 4</a></li>
+	</ul>
+</div>
+
+	<div id="main" class="loading">
+		<div id="hero" class="gallery content roundedtop">
+			<div id="herogallery">
+				<div id="hero-splash" class="hero-splash heroimage">
+					<img src="/appletw/2011/tw/iphone/home/images/hero1_title_20110606.png" width="660" height="175" alt="iPhone 4" class="title" />
+					<img src="/appletw/2011/tw/iphone/home/images/overview_hero1_20110606.png" width="661" height="385" alt="" class="splash" />
+				</div>
+				<div id="hero-retina" class="hero-retina heroimage">
+					<img src="/appletw/2011/tw/iphone/home/images/hero2_title_20110606.png" width="305" height="52" alt="Retina display" class="title" />
+					<img src="/appletw/2011/tw/iphone/home/images/overview_hero2_20110606.png" width="455" height="565" alt="" class="splash" />
+					<div class="hero-content">
+						<p>唯有 iPhone，才擁有 Retina 顯示器，目前僅見最高解析度的手機螢幕。</p>
+						<!--a href="/iphone/gallery/includes/ad-retina.html#retina">
+							<img src="/appletw/2011/tw/iphone/home/images/hero_add_link1_20110606.jpg" width="91" height="61" alt="" />
+							<em class="more">Watch the TV ad</em>
+						</a-->
+					</div>
+				</div>
+
+				<div id="hero-ipod-itunes" class="hero-ipod-itunes heroimage">
+					<img src="/appletw/2011/tw/iphone/home/images/hero3_title_20110606.png" width="345" height="52" alt="iPod and iTunes" class="title" />
+					<img src="/appletw/2011/tw/iphone/home/images/overview_hero3_20110606.png" width="504" height="565" alt="" class="splash" />
+					<div class="hero-content">
+						<p style="width:340px;">唯有 iPhone，才搭載威力強大而別具效能的 A4 處理器。</p>
+						<!--a href="/iphone/gallery/includes/ad-ipodplusitunes.html#ipodplusitunes">
+							<img src="/appletw/2011/tw/iphone/home/images/hero_add_link2_20110606.jpg" width="91" height="61" alt="" />
+							<em class="more">Watch the TV ad</em>
+						</a-->
+					</div>
+				</div>
+				<div id="hero-apps" class="hero-apps heroimage">
+					<img src="/appletw/2011/tw/iphone/home/images/hero4_title_20110606.png" width="218" height="52" alt="App Store" class="title" />
+					<img src="/appletw/2011/tw/iphone/home/images/overview_hero4_20110606.png" width="592" height="565" alt="" class="splash" />
+					<div class="hero-content">
+						<p>唯有 iPhone，才能讓你手指輕點，即進入世界最大的<br />行動應用程式寶庫。</p>
+						<!--a href="/iphone/gallery/includes/ad-appstore.html#ad-appstore">
+							<img src="/appletw/2011/tw/iphone/home/images/hero_add_link3_20110606.jpg" width="91" height="61" alt="" />
+							<em class="more">Watch the TV ad</em>
+						</a-->
+					</div>
+				</div>
+			</div>
+			<div id="gallery-triggers">
+				<ul id="dots"><li><a class="herolink" href="#hero-splash"></a></li><li><a class="herolink" href="#hero-retina"></a></li><li><a class="herolink" href="#hero-ipod-itunes"></a></li><li class="last"><a class="herolink" href="#hero-apps"></a></li></ul>
+			</div>
+		</div><!--/content--> 
+		
+		<nav id="video-thumbs" class="roundedbottom">
+			<ul>
+				<!--li class="first"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/gallery/ads.html"><img class="right" src="/appletw/2011/tw/iphone/home/images/video_thumb_ad_20110425.jpg" alt="" width="45" height="31" />Watch the<br />new TV ads</a></li-->
+				<li class="last" style="*line-height:16px;"><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/design/index.html#design-video"><img class="right" src="/appletw/2011/tw/iphone/home/images/video_thumb_iphone_4_20110425.jpg" alt="" width="45" height="31" />觀賞<br/>iPhone 4 影片</a></li>
+			</ul>
+		</nav>
+		<aside style="overflow: hidden; height: 400px; width: 982px; float: 0 auto;">
+			<ul id="featurettes" class="content" style="width: 735px;">
+				<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/features/facetime.html" class="roundedleft" style="border-left: 1px solid #d9d9d9; border-top: 1px solid #ebebeb;">
+					<h3>FaceTime.<br />
+					視訊電話輕鬆實現</h3>
+					<p>你可以在通話時看見你的親友。沒有其他的電話能讓溝通變得如此有趣。 <em class="more">進一步了解</em></p>
+					<img src="/appletw/2011/tw/iphone/home/images/route-facetime-20101116.png" width="244" height="225" alt="" />
+				</a></li>
+				<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/features/retina-display.html" style="border-top: 1px solid #ebebeb;">
+					<h3>Retina 顯示器<br/> 960 x 640 x Wow</h3>
+					<p>這款 3.5 吋螢幕具有絕佳的 960 x 640 解析度，因此文字和圖形都變得極為銳利、清晰。 <em class="more">進一步了解</em></p>
+					<img src="/appletw/2011/tw/iphone/home/images/route-retina-20101116.png" width="244" height="225" alt="" />
+				</a></li>
+				<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/features/multitasking.html" class="roundedright" style="border-top: 1px solid #ebebeb;">
+					<h3>多工處理<br/>不再顧此失彼</h3> 
+					<p>同時使用多個應用程式，而不犧牲效能或電池續航力。 <em class="more">進一步了解</em></p>
+					<img src="/appletw/2011/tw/iphone/home/images/route-multitasking-20101116.png" width="244" height="225" alt="" />
+				</a></li>
+			</ul>
+			<ul id="featurettes" class="content" style="width: 234px; position: relative; top: -394px; left: 746px;">
+				<li><a href="/appletw/2011/tw/iphone/iphone-4s/" class="roundedleft roundedright" style="border-top: 1px solid #ebebeb;">
+					<img src="/appletw/2011/tw/iphone/home/images/iphone_4s_header.png" width="145" height="25" alt="" style="position: relative; top: 9px; left: 0; margin-bottom: 15px;" />
+					<p>雙核心 A5 晶片。全新 800 萬像素攝錄鏡頭與光學組件。 <em class="more">進一步了解</em></p>
+					<img src="/appletw/2011/tw/iphone/home/images/iphone_4s_image.png" width="244" height="225" alt="" />
+				</a></li>
+			</ul>
+		</aside>
+
+		<aside id="buystrip" style="height: 177px; margin-top: 12px;">
+			<div class="grid2col">
+				<div class="column first pricing" style="height: 189px;"> 
+					<a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/buy/" class="pricing-4"> 
+						<img src="/appletw/2011/tw/iphone/home/images/buystrip_iphone_20110428.png" width="84" height="121" alt="" class="left" /> 
+						<h2><img src="/appletw/2011/tw/iphone/home/images/buystrip-title-4-20100607.png" alt="iPhone 4" width="110" height="26" /></h2> 
+						<p>16GB、32GB*</p>
+					</a> 
+					
+				</div><!--/pricing--> 
+
+				<div class="column last">
+					<ul>
+						<li style="border-right: 1px solid #E9E9E9; border-left: medium none; height:120px; width:224px;" class="first">
+							<img src="/appletw/2011/tw/global/elements/buystripmodule/buystrip-icon-onlinestore.gif" width="31" height="33" alt="" class="icon" />
+							<h3>Apple Online Store</h3>
+							<p>為中意的 iPhone 選購合意的配件。</p>
+							<p><a href="http://store.apple.com/tw/go/iphone" class="more">立即購買</a></p>
+						</li>
+						<li style="border-right: 1px solid #E9E9E9; border-left: medium none; height:120px; width:224px;">
+							<img src="/appletw/2011/global/elements/buystripmodule/buystrip-icon-talk.gif" width="31" height="33" alt="" class="icon" />
+							<h3>立刻向專家洽詢</h3>
+							<p>在你購買之前為你解惑。請撥打 <br />0800-020-021，向知識豐富的<br />專家洽詢。</p>
+						</li>
+						<li style="width:200px;">
+							 <img src="/appletw/2011/tw/global/elements/buystripmodule/buystrip-icon-reseller.jpg" width="31" height="31" alt="" class="icon" /> 
+                            <h3>購買 iPhone</h3> 
+                            <p>iPhone 在三大電信公司各門市供應，你可以就近前往購買。</p>
+                            <p><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/buy/" class="more">了解如何購買 iPhone</a></p>
+						</li>
+					</ul>
+				</div><!--/grid4col-->
+			</div><!--/grid2col-->
+			<p id="links" class="more_options">iPhone 4 還是 iPhone 3GS: <a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/compare-iphones/" class="more" style="*background-position:100% 50%;">比較</a></p>
+		</aside><!--/buystrip-->
+
+		<aside class="content grid3col" id="promos">
+			<a href="/appletw/2011/tw/ios/" class="block column first">
+				<img class="left" src="/appletw/2011/tw/iphone/home/images/promo_ios.png" width="78" height="98" alt="" />
+				<h3>iOS 5</h3>
+				<p style="width:290px;">透過免費的「iOS 5 軟體更新」，獲取超過 200 種全新的 iPhone  適用功能。即將推出。 <span class="more">進一步了解</span></p>
+			</a>
+			
+			<a href="/appletw/2011/tw/icloud/" class="block column">
+				<img class="left" src="/appletw/2011/tw/iphone/home/images/promo_icloud.png" width="78" height="98" alt="" />
+				<h3>iCloud</h3>
+				<p>iCloud 可存放你的內容，推送到你所有裝置之中。免費隨附於 iOS 5，即將推出。 <span class="more">進一步了解</span></p>
+			</a>
+
+			<a href="/iphone/business/" class="block column last" target="_blank">
+				<img class="left" src="/appletw/2011/tw/iphone/home/images/promo_business.png" width="100" height="98" alt="" />
+				<h3>iPhone 商務應用</h3>
+				<p>無論是多工處理或是 FaceTime 視訊通話，iPhone 使商業應用更加完美。 <span class="more">進一步了解</span></p>
+			</a>
+		</aside>
+	</div><!--/main-->
+
+	<ul class="sosumi">
+		<li>FaceTime 需要 iPhone 4 或是四代 iPod touch，發話與收話兩端都要有無線 Wi-Fi 網路連結。</li> <li>部分功能、應用程式與服務未適用於所有地區。請聯絡你的服務供應者了解詳情。應用程式供應情況與售價可能隨情況變更。應用程式計數意指全球可供 iPhone 使用的應用程式總數。</li>
+		<li>* 1GB = 10 億位元組；格式化之後的實際容量可能較少。</li> 
+	</ul>
+
+	<footer id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/appletw/2011/tw/">首頁</a></li>
+				<li>iPhone</li>
+			</ol><!--/breadcrumbs-->
+			<div id="directorynav" class="iphone">
+	<div id="dn-cola" class="column first">
+		<h3>iPhone 4 更多詳情</h3>
+		<ul>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/design/index.html#design-video">iPhone 4 影片</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/features/">功能特色</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/design/">設計</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/apps-for-iphone/">iPhone 應用程式</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/gallery/">圖庫</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/specs.html">技術規格</a></li>
+		</ul>
+	</div><!--/dn-cola-->
+	<div id="dn-colb" class="column">
+		<h3>進一步了解 iPhone</h3>
+		<ul>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/iphone-3gs/">iPhone 3GS</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/compare-iphones/">比較 iPhone 機型</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/softwareupdate/">軟體更新</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/tips/">使用訣竅</a></li>
+			<li><a href="http://developer.apple.com/iphone/program/" target="_blank" >適用於開發人員的 iPhone</a></li>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/accessibility/iphone/vision.html">輔助使用</a></li>
+		</ul>
+	</div><!--/dn-colb-->	
+	<div id="dn-cold" class="column">
+		<h3>支援</h3>
+		<ul>
+			<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/iphone/buy/">如何購買 iPhone</a></li>		
+			<li><a href="/appletw/2011/support/iphone/">線上支援</a></li>
+			<li><a href="http://support.apple.com/manuals/#iphone" target="_blank">使用者指南 (PDF)</a></li>
+
+		</ul>
+	</div><!--/dn-cold-->
+	<div class="capbottom"></div>
+</div><!--/directorynav-->
+		</div><!--/breadory-->
+		<p class="gf-buy">請至 <a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/store/">Apple Online Store</a> 線上選購 (0800-020-021)。或尋找你附近的<a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/reseller/">經銷商</a>前往選購。</p>
+
+<ul class="gf-links piped">
+	<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/about/"  class="first" >Apple 資訊</a></li>
+	<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/sitemap/">網站地圖</a></li>
+	<li><a href="/appletw/2011/tw/hotnews/">發燒新聞</a></li>
+	<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/contact/" class="contact_us">與我們聯絡</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="/appletw/2011/tw/home/elements/taiwan.png" alt="" border="0" height="22" width="22"> </a></li>
+</ul>
+    
+<div class="gf-sosumi">
+	<p>Copyright © 2011 Apple Inc. 保留一切權利。</p>
+	<ul class="piped">
+		<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/legal/terms/site.html" class="first">法律資訊</a></li>
+		<li><a href="https://web.archive.org/web/20111006121758/http://www.apple.com/tw/privacy/">隱私權政策</a></li>
+	</ul>
+</div>
+
+	</footer><!--/globalfooter-->
+</body>
+</html>

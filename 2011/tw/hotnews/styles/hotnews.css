@@ -1,0 +1,199 @@
+﻿@import url(/appletw/2011/global/styles/slider.css);
+
+/* productheader */
+#productheader { border:none;  }
+#productheader h1 a { width:133px; background:url(/appletw/2011/tw/hotnews/images/productheader_title20080313.gif) no-repeat 0 0; }
+
+/* promos */
+#main #promos { width:992px; margin-right:-12px; _zoom:1; }
+
+#main #promos .promo { float:left; width:236px; height:188px; margin-right:12px; }
+/*#main #promos .promo a { display:none; }*/
+#main #promos .promo div { position:absolute; }
+#main #promos .promo a.default { display:inline; }
+#main.hasjs #promos .promo a { display:inline; }
+
+#main #promos:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+
+/* content
+------------------------*/
+#main #content { padding:0; }
+
+#main #content .grid2colb .column.first { width:708px; padding:0 12px; }
+#main #content .grid2colb .column.last { width:234px; _width:236px; }
+
+#main a { color:#2971a7; text-decoration:none; }
+#main a:hover { text-decoration:underline; }
+
+/* headings */
+#main .contentheading { margin:0 -12px; position:relative; min-height:27px; background:#e3e3e3 url(/appletw/2011/tw/hotnews/images/contentheading_bgbottom20080313.gif) no-repeat bottom left; *height:28px; *margin-bottom:1.5em; _height:20px; }
+#main .contentheading h2 { font-size:12px; padding-left:12px; line-height:27px; background:url(/appletw/2011/tw/hotnews/images/contentheading_bgtop20080313.gif) no-repeat top left; _margin-bottom:0; font-weight: normal;}
+
+#main .contentheading #sortnav { position:absolute; top:5px; right:38px; font-size:11px; overflow:hidden; }
+#main .contentheading #sortnav ul { float:left; margin:0 -1em 0 2em; padding:0 1.4em 0 0; white-space:nowrap; background:url(/appletw/2011/tw/hotnews/images/contentheading_sortnav_separator20080313.gif) repeat-y 100% 0; }
+#main .contentheading #sortnav ul li { display:inline; margin:0 -.3em; _margin-left:0; padding:0 1em .1em 0; }
+#main .contentheading #sortnav ul li a { padding:0 0 .1em 1em; color:#727272; outline:none; -moz-outline:none; }
+#main .contentheading #sortnav ul li a:hover { color:#2971a7; }
+
+#main .contentheading #sortnav ul li.active { zoom:1; position:relative; background:url(/appletw/2011/tw/hotnews/images/contentheading_sortnavactive_bgright20080313.gif) no-repeat 100% 50%; }
+#main .contentheading #sortnav ul li.active a { cursor:pointer; color:#fff; text-decoration:none; background:url(/appletw/2011/tw/hotnews/images/contentheading_sortnavactive_bgleft20080313.gif) no-repeat 0 50%; }
+
+#main .contentheading .rss a { position:absolute; top:6px; right:8px; display:block; height:15px; width:27px; text-indent:-9999px; background:url(/appletw/2011/tw/hotnews/images/rss_icon20080313.gif) no-repeat; }
+
+/* pagination */
+#main .pagination { margin-bottom:1.6em; font-size:11px; text-align:right; color:#666; }
+
+#main .pagination a { color:#2971a7; }
+#main .pagination a:hover { color:#666; }
+#main .pagination a.active { color:#555; cursor:default; text-decoration:none; }
+#main .pagination a.disabled { cursor:default; text-decoration:none !important; opacity:.5; -moz-opacity:.5; filter:alpha(opacity=50); }
+
+#main .pagination a.previous { padding-left:9px; outline:none; -moz-outline:none; background:url(/appletw/2011/global/elements/arrows/lessarrow_blue.gif) no-repeat 0 50%; }
+#main .pagination a.next { padding-right:8px; outline:none; -moz-outline:none; background:url(/appletw/2011/global/elements/arrows/morearrow_blue.gif) no-repeat 100% 50%; }
+#main .pagination a.previous:hover,
+#main .pagination a.next:hover { color:#2971a7; }
+
+#main .pagination .pages { display:inline; padding:0 2px; }
+#main .pagination .pages a { padding:0 4px 2px 3px; font-weight:bold; background:url(/appletw/2011/tw/hotnews/images/pagination_pages_separator20080313.gif) no-repeat 100% 50%; }
+#main .pagination .pages a.last { background:none; width:auto !important; float:none !important; }
+
+/* stories */
+#main ul.stories { margin:0; padding:0 0 1px; }
+#main ul.stories li { margin:0; padding:0 0 1px; color:#666; width:98%; }
+                   
+#main ul.stories li h3,
+#main ul.stories li h3 a { color:#333; }
+#main ul.stories li h3 a:visited { color:#666; }
+#main ul.stories li h3 a:hover { color:#2971a7; }
+                   
+#main ul.stories li a.external { padding-right:14px; background:url(/appletw/2011/global/elements/icons/external10x10_ccc999.gif) no-repeat 100% 50%; target-new:tab; }
+                   
+#main ul.stories li p.date,
+#main ul.stories li span { font-size:11px; white-space:nowrap; color:#8c8c8c; }
+#main ul.stories li p.date { margin-bottom:.2em; }
+#main ul.stories li p span { padding-right:.5em; font-size:12px; }
+#main ul.stories li p span a { color:#8c8c8c; }
+#main ul.stories li p span a:hover { color:#2971a7; }
+
+#main ul.stories.featured { margin-bottom:3em; padding-bottom:.6em; border-bottom:1px solid #d3d3d3; }
+#main ul.stories.featured li { padding-left:165px; padding-bottom:1em; width:75%;}
+#main ul.stories.featured li img.left { width:140px; height:100px; margin:0 0 16px -165px; }
+
+#main #latestnews #latestnewsstories div.loading { min-height:200px; _height:200px; background:url(/appletw/2011/tw/hotnews/images/loading20080313.gif) no-repeat 50% 50%; }
+#main #latestnews #latestnewsstories div.loading .pagination { display:none; }
+
+#main #press { padding-bottom:1.6em; }
+#main #press ul.stories li { padding-bottom:1em; }
+#main #press ul.stories li a { display:block; font-weight:bold; color:#333; line-height:18px; }
+#main #press ul.stories li a:visited { color:#666; }
+#main #press ul.stories li a:hover { color:#2971a7; }
+
+#main #press a.more { padding-right:0; white-space:normal; background:none; }
+
+#main ul.stories, #main ul.stories li.story { _zoom:1; }
+#main ul.stories:after, main ul.stories li.story:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+
+/*--- ios promo ---*/
+#main #promos .promo #ios-promo { float: left; width: 236px; height: 155px; position: relative; background: url('/appletw/2011/tw/home/images/promo_ios_41_20100908.jpg') no-repeat 0 -310px; }
+#main #promos .promo #ios-promo.ipod-hover { background-position: 0 -155px; }
+#main #promos .promo #ios-promo.iphone-hover { background-position: 0 0; }
+#main #promos .promo #ios-promo p,
+#main #promos .promo #ios-promo a { text-indent: -9999px; overflow: hidden; }
+#main #promos .promo #ios-promo a { display: block; position: absolute; float: none; }
+#main #promos .promo #ios-promo a#ipod-hover { left: 0; top: 0; width: 236px; height: 155px; }
+#main #promos .promo #ios-promo a#iphone-hover { left: 72px; top: 24px; width: 45px; height: 24px; z-index: 5; }
+
+/* layout */
+#main #content { width:978px; padding:0 1px; }
+
+/* sideboxes */
+.box { border:1px solid; border-color:#e5e5e5 #dbdbdb #d2d2d2; background:#fcfcfc; -webkit-box-shadow:rgba(0,0,0,.5) 0 1px 2px; -moz-box-shadow:rgba(0,0,0,.5) 0 1px 2px; }
+div ~ .box { border-width:0; *border-width:1px; } /* reset for safari3, and resetting that reset for IE7 */
+@-moz-document url-prefix() { div ~ .box { border-width:1px; } } /* FF2 reset for the above */
+.box:nth-child(1n) { border:none; } /* reset for smart browsers */
+.box { border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -khtml-border-radius:3px; }
+
+.roundedtop { border-radius:3px 3px 0 0; -webkit-border-top-left-radius:3px; -webkit-border-top-right-radius:3px; -moz-border-radius:3px 3px 0 0; -o-border-radius:3px 3px 0 0; -khtml-border-radius:3px 3px 0 0; }
+.box h2 { border-radius:4px 4px 0 0; -webkit-border-top-left-radius:4px; -webkit-border-top-right-radius:4px; -moz-border-radius:4px 4px 0 0; -o-border-radius:4px 4px 0 0; -khtml-border-radius:4px 4px 0 0; }
+
+.promobox { position:relative; margin:0; padding:7px 14px 1px; background:url(/startpage/images/mobileme_bg20091110.png) 0 100% repeat-x; zoom:1; }
+.promobox:nth-child(1n) { border-width:3px 0 0; -webkit-border-image:url(/startpage/images/mobileme_top20091110.png) 3 0 0 0 repeat repeat; -moz-border-image:url(/startpage/images/mobileme_top20091110.png) 3 0 0 0 repeat repeat; }
+.promobox:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+#main .grid3col div.column { width:482px; margin-left:14px; }
+#main .grid3col div.column.first,
+#main .grid3col div.column.last { width:234px; }
+
+
+/* sideboxes */
+#main .sidebox { position:relative; margin-bottom:11px; padding:0 15px; font-size:11px; line-height:1.4em; background: none; }
+#main .sidebox h2 { margin:0 -16px 12px; padding:3px 12px 4px; font-size:13px; font-weight: normal; word-spacing:-1px; color:#fff; background:#71829e url(/startpage/elements/titlebg_blue20091110.png) repeat-x 0 0; }
+#main .sidebox h2 a { display:block; margin-right:-7px; color:#fff; background:url(/startpage/elements/box_linkarrow20080805.gif) no-repeat 100% 50%; }
+#main .sidebox h2 a:hover { text-decoration:none; }
+
+#main .sidebox#sb-store { min-height:443px; _height:443px; }
+#main .sidebox#sb-store ul { margin:0 -15px; }
+#main .sidebox#sb-store li { padding:10px 15px; border-top:1px solid #e8e8e8; }
+#main .sidebox#sb-store p { margin:0; *padding-right:5px; }
+#main .sidebox#sb-store img { display:none; }
+#main .sidebox#sb-store ul li.macedpricing img { margin:17px -15px 0; }
+#main .sidebox#sb-store ul li.macedpricing img.grads { padding-top:14px; }
+#main .sidebox#sb-store ul li.app img { margin:18px -15px 28px; }
+#main .sidebox#sb-store ul li.ipad2engraving img { margin:33px -15px 0; }
+#main .sidebox#sb-store ul li.bts img { margin:19px -15px 13px; }
+
+#main .sidebox#sb-store .mothersday { text-align:center; }
+#main .sidebox#sb-store .mothersday img { display:block; margin:10px -15px 0; }
+
+#main .sidebox#sb-store li.backtoschool { position:relative; padding:16px 15px; border-top:1px solid #e8e8e8; }
+#main .sidebox#sb-store li.app p { padding:0 1px; }
+
+#main .sidebox#sb-store li.featured,
+#main .sidebox#sb-store li:first-child { padding:0 15px; border-top:none; text-align:center; }
+#main .sidebox#sb-store li.featured    h4,
+#main .sidebox#sb-store li:first-child h4 { margin-right:-10px; margin-left:-10px; padding-top:1px; padding-bottom:1px; word-spacing:-2px; font-size:14px; line-height:1.19em;}
+#main .sidebox#sb-store li.featured    p,
+#main .sidebox#sb-store li:first-child p { display:inline; }
+#main .sidebox#sb-store li.featured    img,
+#main .sidebox#sb-store li:first-child img { display:block; }
+
+#main .sidebox#sb-store li.featured    .backtoschool img,
+#main .sidebox#sb-store li:first-child .backtoschool img { margin-top:-12px; }
+#main .sidebox#sb-store li.featured    .backtoschool h4,
+#main .sidebox#sb-store li:first-child .backtoschool h4,
+#main .sidebox#sb-store li.featured    .backtoschool p,
+#main .sidebox#sb-store li:first-child .backtoschool p { display:none; }
+#main .sidebox#sb-store li.featured    .backtoschool b,
+#main .sidebox#sb-store li:first-child .backtoschool b { position:absolute; top:44px; left:88px; color:#fff; background-image:url(/appletw/2011/global/elements/arrows/morearrow_fff.gif); }
+
+#main .sidebox#sb-store li.gifts h4 { color:#df0c83; }
+
+#main .sidebox#sb-store p.more { display:block; margin:-2px -4px 8px; padding:3px 2px 3px 4px; text-align:left; color:#797c80; border-top:1px solid #e4e4e4; }
+#main .sidebox#sb-store p.more strong { color:#252525; font-weight:normal; }
+
+#main .sidebox#sb-store li.macbookair a p { display:inline; }
+#main .sidebox#sb-store li:first-child.macbookair { padding:0; }
+#main .sidebox#sb-store li:first-child.macbookair a { text-align:left; padding:17px 10px 19px 95px;  }
+#main .sidebox#sb-store li:first-child.macbookair a h4 { font-size:12px; margin:0; }
+#main .sidebox#sb-store li:first-child.macbookair a p { position:relative; z-index:2; display:block; }
+#main .sidebox#sb-store li:first-child.macbookair a img { margin:-100px -15px 0 -95px; _position:relative; z-index:1; }
+#main .sidebox#sb-store li:first-child.macbookair a.block .more { position:relative; z-index:2; }
+
+#main .sidebox#sb-trailers { height:345px; margin-top:13px; }
+#main .sidebox#sb-trailers #trailers { text-align:center; height:295px; width:200px; }
+
+#main .sidebox#sb-videos { min-height:440px; _height:440px; font-size:12px; }
+#main .sidebox#sb-videos ul li { border:none; margin:14px auto; width:176px; }
+#main .sidebox#sb-videos ul li:first-child { margin-top:20px; }
+#main .sidebox#sb-videos ul li:last-child { margin-bottom:0; }
+
+#main .sidebox#sb-videos ul li a.video-thumb { display:block; width:176px; color:#666; text-align:center; }
+#main .sidebox#sb-videos ul li a.video-thumb:hover { color:#08c; text-decoration:none; }
+#main .sidebox#sb-videos ul li a.video-thumb .image { display:block; width:145px; height:84px; margin:0 auto 3px; padding:7px; position:relative; border:1px solid #ddd;
+	-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+	-webkit-box-shadow:rgba(0,0,0,.4) 0 1px 3px; -moz-box-shadow:rgba(0,0,0,.4) 0 1px 3px; box-shadow:rgba(0,0,0,.4) 0 1px 3px;
+}
+#main .sidebox#sb-videos ul li a.video-thumb .image:nth-child(1n) { border:none; }
+#main .sidebox#sb-videos ul li a.video-thumb .image img { display:block; margin:0 auto; }
+#main .sidebox#sb-videos ul li a.video-thumb .image .play { display:block; width:33px; height:33px; position:absolute; top:32px; left:63px; background:url(/startpage/elements/play.png) no-repeat 0 0; opacity:.8; }
+#main .sidebox#sb-videos ul li a.video-thumb:hover .image .play { opacity:1; }

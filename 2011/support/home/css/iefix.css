@@ -1,0 +1,97 @@
+.content {
+	/*Border for IE 6, 7, 8  shadow alternative*/
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #d2d2d2;
+	border-left: 1px solid #dbdbdb;
+	border-right: 1px solid #dbdbdb;
+	
+}				
+#contactus img {
+		height: 112px;
+		width: 247px;
+		display:block;
+		_bottom: 0px;       /*IE6 only */
+		_overflow: hidden;  /*IE6 only */
+		
+}
+#contactus{
+	_overflow: hidden;  /*IE6 only */
+}
+#main #applecare{
+	_margin: 0px 0px 0px 0px;
+	_padding-right: 162px !important;
+	
+	
+}
+#applecare img{
+	height:211px;
+	width:173px;
+	_right: 6px !important;
+}
+#main .threeup.content{
+	margin-bottom: 0px;  
+	margin-right: 7px;	 
+	_margin-bottom: 10px; /*IE6 only */
+	_margin-right: 4px;	  /*IE6 only */
+	_overflow:hidden;
+}
+#main .content.twoup{
+	margin-bottom: 0px;  
+	margin-right: 5px;	 
+	_margin-bottom: 10px; /*IE6 only */
+	_margin-right: 3px;	  /*IE6 only */
+	_overflow:hidden;
+}
+#main .content.threeup.small{
+	margin-bottom: 0px;  
+	margin-right: 4px;	
+	height: 150px !important; 
+	
+}
+#main .content.twoup.last{
+	_width: 276px !important;
+	width: 276px;
+}
+#communities{
+	_width: 166px !important;
+	_float: left !important;
+} 
+.grid2cold .column.last {
+	_width: 66% !important;
+	/*_height: 151px !important;*/
+}
+.grid2col .column.last{
+	_width:49% !important;
+}
+#extra-asp{
+	_height:80px !important;
+	height:80px;
+}
+/*#extra-asp img{
+	_height:98px !important;
+	_width:186px !important;
+}*/
+.content.twoup img, #extra-asp img{
+	_height:98px;
+	_width:186px;
+}
+.content.threeup.small img{
+	_height:80px ;
+	_width:64px;
+}
+
+#extra .column.last{
+	_width:445px !important;
+}
+#complimentary img{
+	_height:80px;
+	_width:64px;
+}
+#selfservice img{
+	_height:60px;
+	_width:60px;
+}
+#applecaresmall img{
+	
+	_width: 72px;
+}

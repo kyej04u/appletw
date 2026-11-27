@@ -1,0 +1,21 @@
+
+#features-nav ul li a:nth-child(1) { width:195px; } 
+#features-nav ul li a.roundedright {padding-right: 3px;} 
+#features-nav ul li a.roundedleft {padding-left: 2px;}
+#features-nav li .rounded { _width:195px; }
+#features-nav ul li a {*width: 195px; _cursor: pointer;}
+.content .flushleft { _margin-left: -77px;}
+.content .flushright { _margin-right: -80px;}
+
+
+.ios-bottom-callout p { *width:530px;}
+#overview header .column.last { _overflow:hidden; }
+#overview .buckets a { _overflow:hidden; }
+.ios-bottom-callout p { *width: 550px;}
+
+#abb .backup .clipboard ul li {behavior:url(/appletw/2011/global/scripts/lib/ie7pngfix.htc);  }
+
+
+
+
+

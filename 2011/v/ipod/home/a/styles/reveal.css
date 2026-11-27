@@ -1,0 +1,27 @@
+body { background:url(/appletw/2011/global/elements/quicktime/loading.gif) no-repeat 50% 150px; }
+body.loaded { background:transparent; }
+
+#showcase .content,
+#promobar,
+#itunes,
+#globalfooter { opacity:0; -webkit-transition:opacity .5s; -moz-transition:opacity .5s; }
+
+.loaded #showcase .content,
+.loaded #promobar,
+.loaded #itunes,
+.loaded #globalfooter { opacity:1; }
+
+.revealed #showcase .content { position:static; }
+
+#showcase .content        { -webkit-transition-delay: .8s; -moz-transition-delay: .8s; }
+#showcase .content.first  { -webkit-transition-delay: .9s; -moz-transition-delay: .9s; }
+#showcase .content.second { -webkit-transition-delay:1s  ; -moz-transition-delay:1s  ; }
+#showcase .content.third  { -webkit-transition-delay:1.1s; -moz-transition-delay:1.1s; }
+#promobar { -webkit-transition-delay:1.6s; -moz-transition-delay:1.6s; }
+#itunes { -webkit-transition-delay:1.7s; -moz-transition-delay:1.7s; }
+#globalfooter { -webkit-transition-delay:1.8s; -moz-transition-delay:1.7s; }
+
+.canceled #showcase .content,
+.canceled #promobar,
+.canceled #itunes,
+.canceled #globalfooter { -webkit-transition:none; -moz-transition:none; }

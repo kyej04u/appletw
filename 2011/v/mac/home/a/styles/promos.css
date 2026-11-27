@@ -1,0 +1,48 @@
+/* lion hero promo
+------------------------*/
+#showcase .promo-lead div.lion img { float:right; display:inline; }
+
+#showcase .promo-lead div.lion a.block { float:left; display:inline; width:317px; margin:0 -7px 0 45px; text-align:center; }
+#showcase .promo-lead div.lion a.block img { display:block; float:none; margin:0 auto; }
+#showcase .promo-lead div.lion a.block p { margin-bottom:3px; }
+#showcase .promo-lead div.lion a.block span.more { display:inline; float:none; _position:relative; }
+
+#showcase .promo-lead div.lion a.macosx { padding:40px 0 21px; }
+#showcase .promo-lead div.lion a.macosx img.osx { margin-bottom:21px; }
+
+
+/* Why Mac
+------------------------*/
+#showcase-whymac { width:980px; padding-top:18px; margin-bottom:10px; background:#fefefe;
+	background:-webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(245,245,245)),color-stop(0.33, rgb(255,255,255)));
+	background:-moz-linear-gradient(center bottom,rgb(245,245,245) 0%,rgb(255,255,255) 33%);
+	*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF5F5F5');
+}
+#showcase-whymac h2 { padding-top:15px; margin-bottom:5px; font-size:20px; font-weight:normal; color:#000; }
+#showcase-whymac h3 { color:#000; }
+#showcase-whymac a:hover h3 { color:#08c; }
+#showcase-whymac p { color:#777; margin-bottom:9px; }
+#showcase-whymac p.intro { padding-bottom:28px; margin-bottom:0; font-size:20px; line-height:24px; font-weight:normal; color:#888; }
+#showcase-whymac p.intro span.more { display:inline; float:none; background:url(/appletw/2011/global/elements/arrows/morearrow_med_08c.gif) no-repeat 100% 55%; }
+#showcase-whymac img.hero-image { margin:0 27px 0 0; }
+#showcase-whymac span.more { float:none; display:inline; }
+#showcase-whymac .column { float:left; width:295px; padding-top:2px; padding-bottom:7px; word-spacing:-1px; zoom:1; *padding-bottom:0; }
+#showcase-whymac .column.first { padding-right:12px; border-right:1px solid #e5e5e5; }
+#showcase-whymac .column.first img { margin:5px 0 0 -50px; }
+#showcase-whymac .column.last { border:none; padding-left:26px; padding-right:20px; border-left:1px solid #fff; }
+#showcase-whymac .column.last img { margin:33px 0 0 0; }
+
+
+/* Bottom Promo
+------------------------*/
+#education { margin-bottom:10px; width:949px; height:170px; padding-left:31px; background:#fff no-repeat; }
+#education span.more { display:inline; float:none; }
+#education h2,
+#education p { font-size:16px; line-height:20px; }
+#education p { width:555px; color:#888; margin-bottom:11px; }
+#education h2 { padding-top:30px; margin-bottom:0; font-weight:bold; }
+#education ul { width:600px; }
+#education ul li { float:left; }
+#education ul li a { font-size:14px; line-height:20px; }
+#education ul li.cta1,
+#education ul li.cta2 { width:158px; }

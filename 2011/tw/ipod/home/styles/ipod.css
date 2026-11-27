@@ -1,0 +1,44 @@
+/* showcase */
+#showcase { margin-bottom:10px; }
+#showcase .content { float:left; width:320px; height:210px; padding:0; color:#888; }
+#showcase .content h2 { font-size:1.2em; font-weight:bold; }
+
+#showcase .promo-lead,
+#showcase .promo-lead a { float:none; width:980px; height:410px; margin:0 0 8px; }
+#showcase .promo-lead { position:relative; }
+#showcase .promo-lead a { display:block; }
+#showcase .promo-lead .shuffle img { margin-top:-18px; }
+
+#showcase .promos { margin-bottom: 10px; zoom: 1; }
+#showcase .promos:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#showcase .promos a { margin-bottom: 0; margin-left: 10px; *margin-left: 8px; }
+#showcase .promos a.first { margin-left: 0; }
+
+#showcase .content img { display:block; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+
+/* promobar */
+#promobar { clear:both; width:980px; padding:0; margin-bottom:10px; font-size:12px;
+	background:#fff url(/appletw/2011/tw/ipod/home/elements/promobar_bg20100901.png) repeat-y 50% 0; behavior:url(/appletw/2011/tw/global/scripts/lib/iepngfix_scale.htc);
+	background:url(/appletw/2011/tw/ipod/home/elements/promobar_bg20100901.png) repeat-y 50% 0, -webkit-gradient(linear, 0 0, 0 35, from(#f7f7f7), to(#fff));
+	background:url(/appletw/2011/tw/ipod/home/elements/promobar_bg20100901.png) repeat-y 50% 0, -moz-linear-gradient(top, #f7f7f7, #fff 35px);
+}
+#promobar .column { position:relative; display:inline; width:142px; min-height:9em; _height:9em; margin:0 0 0 2px; padding:1em 10px 35px; z-index:0; overflow:hidden; zoom:1; }
+#promobar .last { padding-left:9px; margin:0 0 0 -10px !important; }
+
+#promobar a { color:#85898c; }
+#promobar .column:hover {
+	/*background: i need to create the fallback img;*/
+	background:-webkit-gradient(linear, 0 0, 0 70, from(#f0f0f0), to(#fff));
+	background:-moz-linear-gradient(top, #f0f0f0, #fff 70px);
+}
+#promobar a.more { clear:left; float:left; background-image:url(/appletw/2011/tw/global/elements/arrows/morearrow_a1a5a9.gif); }
+#promobar a.more:hover { color:#08c; text-decoration:none; background-image:url(/appletw/2011/tw/global/elements/arrows/morearrow_08c.gif); }
+#promobar em a { display:block; position:absolute; width:80px; height:50px; text-indent:-9999px; overflow:hidden; *background:url(/appletw/2011/tw/global/elements/blank.gif) repeat; }
+#promobar em a.touch { width:80px; height:50px; left:10px; bottom:10px; }
+#promobar em a.nano { right:10px; bottom:30px; }
+
+#promobar p { *position:relative; z-index:1; }
+#promobar em { clear:left; display:block; position:absolute; width:163px; margin:0 -10px; bottom: 0; *bottom:-1px; z-index: 0; }
+#promobar em img { display:block; margin:0 auto; }
+
+#promobar .column { border-left: none; }

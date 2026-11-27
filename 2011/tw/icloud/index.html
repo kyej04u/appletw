@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW" lang="zh-TW">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+	<link id="globalheader-stylesheet" rel="stylesheet" href="/appletw/2011/global/nav/styles/navigation.css" type="text/css" />
+	<title>Apple - iCloud - 全新存取內容的方式</title>
+	<meta name="omni_page" content="iCloud - Index" />
+	<meta name="Category" content="products,apps" />
+	<meta name="Description" content="iCloud 做好雲端服務為你存放照片、應用程式、行事曆、文件與其他東西。以無線方式推送到所有裝置之中。"  />
+	<script src="/appletw/2011/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/appletw/2011/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/ac_autogallery.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+<script src="/appletw/2011/global/scripts/ac_media.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="/appletw/2011/global/styles/ac_media.css" type="text/css" />
+
+
+
+	<link rel="stylesheet" href="/appletw/2011/tw/global/styles/base.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/v/icloud/c/styles/icloud.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/icloud/styles/icloud.css" type="text/css" />
+	<script type="text/javascript">
+		Event.onDOMReady(function() {
+			var heroGallery = new AC.ViewMaster.Viewer($$('#video-icloud-default'), 'hero-video', 'hero-video', {
+				manageZ: 1010,
+				showFirstOnStopMovie: true,
+				ensureInView: true,
+				escapeToClose: true,
+				silentTriggers: true,
+				imageLinkAutoCaptions: true,
+				addSectionIdAsClassName: true,
+				useHTML5Tags: true });
+		});
+	</script>
+	
+</head>
+<body id="overview" class="overview">
+<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'tw';
+</script>
+<script src="/appletw/2011/global/nav/scripts/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<nav id="globalheader">
+	<!--googleoff: all-->
+	<ul id="globalnav" role="navigation">
+		<li id="gn-apple"><a href="/appletw/2011/tw/"><span>Apple</span></a></li>
+		<li id="gn-store"><a href="http://store.apple.com/tw/"><span>購買</span></a></li>
+		<li id="gn-mac"><a href="/appletw/2011/tw/mac/"><span>Mac</span></a></li>
+		<li id="gn-ipod"><a href="/appletw/2011/tw/ipod/"><span>iPod</span></a></li>
+		<li id="gn-iphone"><a href="/appletw/2011/tw/iphone/"><span>iPhone</span></a></li>
+		<li id="gn-ipad"><a href="/appletw/2011/tw/ipad/"><span>iPad</span></a></li>
+		<li id="gn-itunes"><a href="/appletw/2011/tw/itunes/"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="/appletw/2011/tw/support/"><span>支援服務</span></a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/search/" method="post" class="search" id="g-search"><div class="sp-label">
+			<label for="sp-searchtext">Search</label>
+			<input type="text" name="q" id="sp-searchtext" accesskey="s" />
+		</div></form>
+		<div id="sp-magnify"><div class="magnify-searchmode"></div><div class="magnify"></div></div>
+		<div id="sp-results"></div>
+	</div>
+</nav>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+	
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+s.pageName=AC.Tracking.pageName()+" (tw)";
+s.channel="www.tw.icloud"
+
+
+
+Event.onDOMReady(function() {
+	function trackNav(link,loc) {
+		link.observe('mousedown',function(){
+			if(AC&&AC.Storage){
+				AC.Storage.setItem('s_nav',loc,'0');
+			}
+		});
+	}
+	$$('.content a').each(function(link){
+		var spanCheck=''; 
+		if(link.getAttribute('id')){
+			if(link.getAttribute('id').match('hero')){
+				trackNav(link,'hero promo');
+			}
+		} else if(spanCheck=link.down('span')){
+			if(spanCheck.hasClassName('more')){
+				trackNav(link,'learn more');
+			}
+		} else if(link.hasClassName('more')){
+			trackNav(link,'learn more');
+		}
+	});
+	$$('#features-nav a').each(function(link){
+		trackNav(link,'features nav');
+	});
+	$$('#browse-strip a').each(function(link){
+		trackNav(link,'browse strip');
+	});
+	$$('#promofooter a').each(function(link){
+		trackNav(link,'promo footer');
+	});
+	$$('.buckets a').each(function(link){
+		trackNav(link,'promos');
+	});
+	$$('.bottom-callout a').each(function(link){
+		trackNav(link,'call out');
+	});
+	$$('#hero').each(function(link){
+		trackNav(link,'hero promo');
+	});
+});
+
+
+s.linkInternalFilters="javascript:,apple.com/tw/"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+	<div id="main">
+<nav id="productheader">
+	<h2><a href="/appletw/2011/tw/icloud/"><img src="/appletw/2011/tw/icloud/images/product_title.png" alt="iCloud" width="93" height="26"  /></a></h2>
+	<ul>
+		<li id="pn-overview"><a href="/appletw/2011/tw/icloud/">概覽</a></li>
+		<li id="pn-whatis"><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/what-is.html">什麼是 iCloud？</a></li>
+		<li id="pn-features"><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/features/">功能特色</a></li>
+	</ul>
+</nav>
+
+		<div class="content">
+			<header class="hero gallery flushleft flushright">
+				<div class="gallery-view" id="hero-video">
+					<div class="gallery-content" id="video-icloud-default">
+						<img class="coming-soon roundedtopleft" src="/appletw/2011/tw/icloud/images/overview_coming_soon.png" width="150" height="139" alt=""  />
+						<hgroup class="column first">
+							<h1><img class="center" src="/appletw/2011/tw/icloud/images/overview_title.png" width="256" height="294" alt="iCloud"  /></h1>
+							<p class="intro center">雲端服務當是如此：自動進行且不費吹灰之力。iCloud 與你的應用程式天衣無縫整合，你可透過所有裝置存取內容。<a href="/appletw/2011/tw/ios/">iOS 5</a> 免費提供 iCloud 服務。 <a class="more" href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/what-is.html">進一步了解</a></p>
+						</hgroup>
+						<div class="column last gallery autogallery autogallery-slideshow" style="_margin-right:5px;">
+							<div class="gallery-view" id="hero-slideshow">
+								<figure class="gallery-content" id="gallery-music">
+									<img src="/appletw/2011/tw/icloud/images/overview_gallery_photos.jpg" width="532" height="558" alt=""  />
+									<figcaption>
+										<p>照片串流。你的照片，在你所有裝置上現身。</p>
+									</figcaption>
+									
+								</figure>
+							</div><!--/gallery-view-->
+							<nav class="simple-nav">
+								<ul>
+									<li><a class="hero-slideshow imageLink" href="/appletw/2011/tw/icloud/images/overview_gallery_documents.jpg#gallery-documents" title="你的文件，在你所有裝置上現身。">文件</a></li>
+									<li><a class="hero-slideshow imageLink" href="/appletw/2011/tw/icloud/images/overview_gallery_mail.jpg#gallery-mail" title="你的郵件，在你所有裝置上現身。">Mail</a></li>
+									<li><a class="hero-slideshow imageLink" href="/appletw/2011/tw/icloud/images/overview_gallery_calendars.jpg#gallery-calendars" title="你的行事曆，在你所有裝置上現身。">行事曆</a></li>
+									<li><a class="hero-slideshow imageLink" href="/appletw/2011/tw/icloud/images/overview_gallery_contacts.jpg#gallery-contacts" title="你的聯絡人資訊，在你所有裝置上現身。">聯絡人資訊</a></li>
+								</ul>
+							</nav>
+						</div><!--/column last gallery-->
+					</div>
+				</div><!--/gallery-view movie-->
+			</header>
+			<div class="buckets flushleft flushright grid3col roundedbottom" style="_overflow:hidden;">
+				<section class="column first">
+					<a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/what-is.html">
+						<h1>什麼是 iCloud？</h1>
+						<p>iCloud 可存放你的照片、文件，以及更多內容，並以無線方式將它們推送到你所有裝置中。 <span class="more">進一步了解</span></p>
+						<img src="/appletw/2011/tw/icloud/images/overview_bucket_whatis.png" width="295" height="162" alt=""  />
+					</a>
+				</section>
+				<section class="column">
+					<a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/features/">
+						<h1>內建在你應用程式之中</h1>
+						<p>照片、 書籍及應用程式，甚至是電子郵件、聯絡人資訊及行事曆等，你每天所使用的 Apple 應用程式均設計可與 iCloud 搭配使用。 <span class="more">進一步了解</span></p>
+						<img src="/appletw/2011/tw/icloud/images/overview_bucket_apps.png" width="282" height="150" alt=""  />
+					</a>
+				</section>
+				<section class="column last">
+					<a class="hero-video video-thumb" href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/icloud/includes/video-icloud.html#video-icloud">
+						<h1>觀賞 iCloud 影片</h1>
+						<p style="width:235px;">看看 iCloud 如何提升你的日常作業。 <span class="more">觀賞影片</span></p>
+						<span class="image">
+							<span class="play"></span>
+							<img src="/appletw/2011/tw/icloud/images/overview_bucket_keynote.png" width="186" height="114" alt=""  />
+						</span>
+					</a>
+				</section>
+			</div>
+		</div><!--/content-->
+	</div><!--/main-->
+
+	<section class="content ios-bottom-callout">
+	<a href="/appletw/2011/tw/ios/">
+		<img src="/appletw/2011/tw/icloud/images/overview_ios_icon.png" width="292" height="86" alt=""  />
+		<p><span class="em">iOS 5</span> 是 iPhone、iPad 及 iPod touch 有史以來規模最大的軟體版本更新。除了超過 200 種新功能外，此一免費軟體更新，將為你的 iOS 裝置帶來可存取 iCloud 的能力。 <span class="more">進一步了解</span></p>
+	</a>
+</section>
+
+
+	<ul class="sosumi">
+		<li>iCloud 需要 iPhone 3GS 或後續機型、iPod touch (第三及四代)、iPad 或 iPad 2 上的 iOS 5；搭載 OS X Lion 的 Mac 電腦；或是搭載 Windows Vista 或 Windows 7 (需有 Outlook 2007 或 2010 以存取聯絡人資訊及行事曆) 的 PC。部份功能需要 Wi-Fi 連線。部份功能未在所有國家或地區提供。某些服務存取數目限制在 10 台裝置以下。</li>
+	</ul>
+
+	<footer id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/appletw/2011/tw/">首頁</a></li>
+				<li>iCloud </li>
+			</ol>
+		</div><!--/breadory-->
+<p class="gf-buy">請至 <a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/store/">Apple Online Store</a> 線上選購 (0800-020-021)。或尋找你附近的<a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/reseller/">經銷商</a>前往選購。</p>
+
+<ul class="gf-links piped">
+	<li><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/about/"  class="first" >Apple 資訊</a></li>
+	<li><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/sitemap/">網站地圖</a></li>
+	<li><a href="/appletw/2011/tw/hotnews/">發燒新聞</a></li>
+	<li><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/contact/" class="contact_us">與我們聯絡</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="/appletw/2011/tw/home/elements/taiwan.png" alt="" border="0" height="22" width="22"> </a></li>
+</ul>
+    
+<div class="gf-sosumi">
+	<p>Copyright © 2011 Apple Inc. 保留一切權利。</p>
+	<ul class="piped">
+		<li><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/legal/terms/site.html" class="first">法律資訊</a></li>
+		<li><a href="https://web.archive.org/web/20111006235328/http://www.apple.com/tw/privacy/">隱私權政策</a></li>
+	</ul>
+</div>
+
+	</footer><!--/globalfooter-->
+</body>
+</html>

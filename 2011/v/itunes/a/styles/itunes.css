@@ -1,0 +1,216 @@
+html, body { background:#F5F6F7 url(/appletw/2011/v/itunes/a/images/gradient_texture.jpg) repeat-x 0 0; }
+
+#main { width:100%; min-width:982px; margin:0 auto; overflow:hidden; }
+#main .callout { font-size:12px; }
+#main .sosumi { width:auto; padding-right:0; padding-left:0; }
+
+#content,
+.content{ font-size:14px; line-height:21px; width:880px; margin:0 auto 18px; padding:4em 50px 2em; zoom:1; }
+.content h2 { font-size:1.7em; }
+.content h3 { font-size:1.1429em; }
+.content .flushleft { margin-left:-50px; }
+.content .flushright { margin-right:-50px; }
+.content .flushtop { margin-top:-4em; }
+.content img.center { display:block; margin-right:auto; margin-left:auto; }
+.content::after, .selfclear::after { content:'.'; display:block; height:0; clear:both; visibility:hidden;}
+.content hr { margin:4em -12px 3em; height:1.5em; border:none; }
+.content hr.plain { display:block; margin:3em 0 2em; height:0; background:none; border-bottom:1px solid #D9D9D9; }
+
+h1 { margin-bottom:.3em; font-size:3em; line-height:1.4; font-weight:normal; }
+h1 img, h2 img { display:block; }
+h3 { margin-bottom:.3em; font-size:1.3em; line-height:1.4; }
+h2 { margin-bottom:.3em; font-size:2em; line-height:1.4em; font-weight:normal; }
+h4 { font-size:1em; line-height:1.5em; }
+
+a.block { display:block; color:#333; cursor:pointer; }
+a.wrap:hover, a.block:hover, a.block:hover .wrap { text-decoration:none; }
+a.backtotop { float:right; margin-top:1em; padding-right:10px; font-size:12px; text-align:right; background:url(/appletw/2011/global/elements/arrows/uparrow_08c.gif) no-repeat 100% 50%; }
+img.shadow { padding:5px; background:white; margin-bottom:2px; _position:relative; }
+
+.selfclear { zoom:1; }
+.selfclear:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+.grid2col .column { width:47%; }
+.column { display:inline; }
+.center { text-align:center; }
+.shadow { -webkit-box-shadow:rgba(0, 0, 0, 0.35) 0 1px 3px; -moz-box-shadow:rgba(0, 0, 0, 0.35) 0 1px 3px; }
+.learn { display:block; float:left; margin:-.95em 0 1.5em; text-align:left; }
+.learn::after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+/* product header */
+#productheader { z-index:10; }
+#productheader h2 a { display:inline; text-indent:0; }
+#productheader h2 a img { position:relative; margin-bottom:-8px; }
+
+.whats-new #pn-whats-new a,
+.whatis   #pn-whatis a,
+.whatson  #pn-whatson a,
+.howto    #pn-howto a { color:#999; }
+
+#whats-new #pn-whats-new a,
+#whatis   #pn-whatis a,
+#whatson  #pn-whatson a,
+#howto    #pn-howto a,
+#latino   #pn-latino a,
+.charts   #pn-charts a { color:#999 !important; text-shadow:#fff 0 1px 0; cursor:default; }
+
+.flushleft { float:left; margin-left:-50px; }
+.flushright { float:right; margin-right:-50px; }
+.flushboth { margin-left:-50px; margin-right:-50px; }
+
+img.new { position:absolute; top:0; left:0; }
+
+p.intro a.more { background-image:url(/appletw/2011/global/elements/arrows/morearrow_med_08c.gif); }
+
+
+/* callouts */
+.callout { position:relative; padding:19px; zoom:1; -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .4); -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .4); box-shadow:0 1px 2px rgba(0, 0, 0, .4); background-color:#F9F9F9; border:none; border-top-color:#F9F9F9; border-bottom-color:#BDBDBD; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+.callout p { margin-bottom:0; zoom:1; }
+.callout h3 { margin-bottom:0; }
+.callout img.left { margin-right:12px; }
+.callout a.block { display:block; margin:-18px; padding:18px; text-decoration:none; zoom:1; background-color:#F0F3F5; background-image:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0))); border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+.callout a.block::after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+.callout.inset { background:#F4F4F4; -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .20); -webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, .15); }
+.callout.inset a.block { background:#F4F4F4; -moz-box-shadow:inset 0 1px 4px rgba(0, 0, 0, .25); -webkit-box-shadow:inset 0 1px 4px rgba(0, 0, 0, .25); }
+
+
+/* galleries */
+.gallery::after, .gallery-view::after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+.gallery .swap { height:400px; position:relative; }
+.gallery .swap div { display:block; position:absolute; top:0px; left:0px; }
+.gallery .slide { display:none; }
+.gallery .swap .slide { display:block; position:absolute; top:0px; left:0px; }
+.gallery ul li { margin:0 5px; }
+.gallery ul.image-nav { position:relative; margin:0 auto; }
+
+
+/* gallery image-nav */
+.gallery .image-nav { text-align:center; }
+.gallery .image-nav li { display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1;width:96px; margin:0 8px; vertical-align:top; }
+.gallery .image-nav li a { font-size:.7857em; color:#000; text-decoration:none; display:block; *display:inline; zoom:1; outline:none; }
+.gallery .image-nav li a.active { color:#666; cursor:default; }
+.gallery .image-nav li a span.image { display:block; *display:inline; zoom:1; padding:8px; *padding-bottom:5px; background:url(/appletw/2011/v/itunes/a/images/swap_thumb_bg.png) no-repeat; cursor:pointer; }
+.gallery .image-nav li a:hover span.image { background-position:0 -66px; }
+.gallery .image-nav li a.active span.image { background-position:0 -132px; cursor:default; }
+.gallery .image-nav li a.active:hover span.image { background-position:0 -132px; }
+.gallery .image-nav li a span.image img { display:block; *display:inline; zoom:1; }
+.gallery .image-nav li a span.caption { display:block; padding-top:6px; *display:inline; }
+
+
+/* simple dot navs */
+.gallery .simple-nav { margin-bottom:1em; height:13px; text-align:center; }
+.gallery .simple-nav li,
+.gallery .simple-nav li a { display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1; }
+.gallery .simple-nav li { position:relative; margin-right:8px; width:13px; height:13px; *height:12px; overflow:hidden; }
+.gallery .simple-nav li.last-dot { margin-right:0; }
+.gallery .simple-nav li a { position:absolute; width:13px; height:38px; top:0; left:0; outline:none; cursor:pointer; text-indent:-9999px; line-height:0; background:url(/appletw/2011/v/itunes/a/images/gallerynav_simple.png) no-repeat 0 0; }
+.gallery .simple-nav li a:hover { top:-13px; }
+.gallery .simple-nav li a.active { cursor:default; top:-26px; opacity:1; -moz-opacity:1; }
+
+
+/* hero nav */
+.hero-nav li { width: 100%; position: absolute; top: 0; left: 0; z-index: 10; }
+.hero-nav li .arrow { position: absolute; display: block; height: 560px; width: 107px; -moz-opacity:0; opacity:0; -webkit-transition: .25s opacity ease-out; float: none; padding: 0 20px; outline: none; z-index: 100; top:0; }
+.hero-nav li .arrow:hover { -moz-opacity:1; opacity:1; }
+.hero-nav li .arrow.disabled { display: none; }
+.hero-nav li .arrow img,
+.hero-nav li .arrow span { display: block; margin-top: 255px; *margin-top: 120px; text-indent: -1000em; }
+.hero-nav li .arrow:hover span,
+.hero-nav li .arrow.left { left: 0; }
+.hero-nav li .arrow.left img,
+.hero-nav li .arrow.left span { float: left; }
+.hero-nav li .arrow.right { right: 0; }
+.hero-nav li .arrow.right img,
+.hero-nav li .arrow.right img { float: right; }
+/* iPad Styles */
+@media only screen and (device-width: 768px) {
+	.hero-nav li .arrow { opacity: 1; -webkit-transition: none; }
+}
+
+
+/* facebook module */
+#facebook { clear:both; overflow:hidden !important; margin:1.5em auto; padding:0; width:980px; border:1px solid #ddd; background:#f4f6f7; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+#facebook:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+#content #facebook { width:auto; }
+#facebook .fbfan { float:left; margin-bottom:-2px; width:200px; height:65px; }
+#facebook p { margin-top:1.8em; margin-bottom:0; _margin-bottom:17px; }
+#facebook a { color:#08c; }
+
+
+/* itunes education volume purchase program */
+#education .content { padding:4em 50px 1.6em; *padding-bottom:0; }
+#education .content, #faq .content { position:relative; }
+#education .hero, .education#faq .hero { background:#fdfdfd url(/appletw/2011/v/itunes/a/images/app_store_hero_bg.jpg) repeat-x 0 bottom; width:930px; _margin-right:-50px; margin-left:-50px; padding-left:50px; margin-top:-52px; padding-bottom:0; margin-bottom:45px; }
+#education .hero .column.first { padding-top:64px; width:51%; }
+#education .hero .column.last, .education#faq .hero .column.last { padding-top:44px; padding-bottom:18px; }
+.education#faq .column.last img.lockup { margin-left:23px; }
+#education .hero img.right { margin-right:50px; margin-bottom:0px; }
+#education .grid2cola .column.first { width:64%; }
+#education .grid2cola .column.last { font-size:12px; padding-top:24px; width:31%; }
+#education .hero h3 { margin-top:18px; }
+#education .steps { padding-top:25px; *padding-bottom:0; clear:both; }
+#education .steps p.push-up { margin-top:-12px; }
+#education .steps h2 { font-size:24px; font-weight:normal; }
+#education .steps h3 { margin-bottom:25px; }
+#education .steps .wrapper { overflow:hidden; }
+#education .steps .column { font-size:12px; padding-top:25px; background:url(/appletw/2011/v/itunes/a/images/steps_divisor.jpg) no-repeat 100% 62px; padding-right:15px; width:272px; }
+#education .steps .column.step1, #education .steps .column.step2 { min-height:505px; _height:505px; }
+#education .steps .column.step2 { *width:284px; }
+#education .steps .column.last { padding-right:0; background:none; *width:260px; }
+#education .steps .column.last p { *margin-right:-10px; }
+#education .steps img.top { margin-bottom:12px; }
+#education .steps p { padding-top:4px; }
+#education .steps b { *word-spacing:-1px; }
+#education .steps p, #education .steps ul, #education .steps .step3 .more.learn, #education .steps .step2 .more.learn { padding-left:38px; padding-right:10px; }
+#education .steps .step2 .more.learn { white-space:normal; background-position:50% 80%; *background-position:55% 80%; }
+#education .steps .step1 img.top { margin-left:45px; }
+#education .steps .step2 img.top { margin-left:37px; }
+#education .steps .step3 img.top { margin-left:88px; }
+#education .steps img.left { margin-right:10px; }
+#education .steps ul li.text { padding-top:0.5em; }
+
+#education ul.push-up { margin-top:-1.2em; }
+#education #main p.nomargin { margin:0; }
+
+.education#faq a.toplink { color:#08c; background:transparent url(/appletw/2011/global/elements/arrows/uparrow_08c.gif) no-repeat scroll 100% 50%; position:absolute; right:10px; padding-right:10px; top:-57px; }
+.education#faq h1 img { margin-top:10px; }
+.education#faq #featurelist { width:575px; margin-bottom:50px; border:1px solid #e5e4e4; background:#fcfcfc; -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; -khtml-border-radius:8px; padding:12px 21px 10px; font-size:11px; margin-top:18px; }
+.education#faq #featurelist h4 {font-size:11px; font-weight:normal; color:#898989; margin-bottom:6px; }
+.education#faq #featurelist a { display:block; padding-bottom:2px; font-size:11px; line-height:23px; color:#252525; _position:relative; _zoom:1; }
+.education#faq .column.last img.appstore { position:absolute; right:0; top:44px; }
+.education#faq .content h2 { border-bottom:1px solid #e5e5e5; padding-top:30px; font-size:24px; padding-bottom:5px; margin-bottom:30px; }
+.education#faq .content h2#overview { padding-top:0px; }
+.education#faq .section { position:relative; width:100%; font-size:12px; }
+.education#faq .section .column { position:relative; }
+.education#faq .top p.intro { margin-bottom:0px; font-size:12px; color:#333; width:620px; margin-top:0; padding-top:3px; }
+
+/* badges */
+.content .badge { position:relative; padding:0 8px; *padding-bottom:1px; top:-3px; *top:-1px; z-index:1; display:inline-block; *display:inline; *zoom:1; font-weight:normal; text-shadow:0 1px 0 rgba(0,0,0,.3); color:#fff; font-size:12px; line-height:18px; -webkit-font-smoothing:auto;
+	border:1px solid #f88c13; border-top-color:#cf7310; border-bottom-color:#ffa312;
+	background:#ff9a13;
+	background:-webkit-gradient(linear, left top, left bottom, from(#ff8e14), to(#ffa312));
+	background:-moz-linear-gradient(top, #ff8e14, #ffa312);
+	-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px #cf7310; -moz-box-shadow:inset 0 1px 1px #cf7310; box-shadow:inset 0 1px 1px #cf7310;
+}
+.content .badge:nth-child(1n) { border:0; line-height:20px; }
+
+/* footers */
+#promofooter { margin-top:0; -webkit-font-smoothing:antialiased; }
+
+/* sosumi */
+.sosumi, ol.sosumi { width:940px; margin:18px auto 10px; padding:0 20px; }
+.sosumi a { color:#333; }
+.sosumi li { line-height:14px; padding-bottom:5px; margin-bottom:0; }
+ol.sosumi li { margin-left:15px; }
+.sosumi strong em,
+.sosumi strong { font-weight:bold; }
+.sosumi em strong,
+.sosumi em { font-style:italic; }
+
+
+/* specific pages */
+/* what's on */
+
+#whatson #tonestore h2 { display:inline; margin-right:10px; }
+#whatson #tonestore p { margin-bottom:0; }

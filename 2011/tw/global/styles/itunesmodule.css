@@ -1,0 +1,105 @@
+#itunesmodule { width:983px; margin:1.6em 0 0 1px; color:#fff; }
+#itunesmodule h2 { margin:0; }
+
+/* titlebar
+---------------------------------------------------------*/
+
+#itunesmodule .titlebar { padding:11px 12px 6px 24px; background:url(/appletw/2011/tw/global/elements/itunesmodule/titlebar.gif) no-repeat 0 0; zoom:1; }
+#itunesmodule .titlebar:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+#itunesmodule .titlebar h2 { float:left; text-indent:-9999px; }
+
+#itunesmodule .titlebar ul.sortnav { position:absolute; display:none; width:925px; margin-top:-1px; font-size:10px; font-weight:bold; text-align:center; }
+#itunesmodule .titlebar ul.sortnav:after { content:'.'; display:block; clear:both; height:0; visibility:hidden; }
+
+#itunesmodule .titlebar ul.sortnav li { display:inline; padding:3px 9px 4px; *padding-top:0; *padding-bottom:0; }
+#itunesmodule .titlebar ul.sortnav li a.module-link { color:#282828; padding:3px 9px 4px 0; outline:none; }
+#itunesmodule .titlebar ul.sortnav li a.module-link:hover,
+#itunesmodule .titlebar ul.sortnav li a.module-link:focus { color:#000; text-decoration:none; }
+#itunesmodule .titlebar ul.sortnav li.active { background:url(/appletw/2011/tw/global/elements/itunesmodule/sortnav_left.gif) no-repeat 0 50%; }
+#itunesmodule .titlebar ul.sortnav li.active a.module-link { color:#fefefe; cursor:default; background:url(/appletw/2011/tw/global/elements/itunesmodule/sortnav_right.gif) no-repeat 100% 50%; }
+
+#itunesmodule .titlebar form { float:right; position:relative; margin:-2px 4px 0 0; }
+#itunesmodule .titlebar form input.search-submit { display:none; }
+#itunesmodule .titlebar form input.prettysearch,
+#itunesmodule .titlebar form .search-wrapper { width:142px; }
+#itunesmodule .titlebar form .search-wrapper input.prettysearch { width:113px; *margin-left:20px; }
+
+
+/* panel (lower lighter gray part)
+---------------------------------------------------------*/
+#itunesmodule-panel { position:relative; min-height:329px; _height:329px; background:url(/appletw/2011/tw/global/elements/itunesmodule/background.gif) no-repeat 0 100%; }
+
+/* section */
+#itunesmodule-panel div.section { clear:both; width:950px; padding:15px; margin:0; }
+#itunesmodule-panel div.section.last { width:auto !important; }
+
+/* list boxes */
+#itunesmodule-panel .section .toplist { position:relative; float:left; width:153px; min-height:298px; _height:298px; margin-right:12px; padding:0 10px; background:url(/appletw/2011/tw/global/elements/itunesmodule/box_bg.gif) repeat-x 0 0; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; }
+#itunesmodule-panel .section .toplist h2 { padding:10px 16px 8px; margin:0 -10px; font-size:12px; }
+#itunesmodule-panel .section .toplist h3 { display:none; width:3em; font-size:10px; color:#08c; }
+
+#itunesmodule-panel .section .toplist .listing a strong { font-weight:normal; }
+
+#itunesmodule-panel .section .toplist .configure-trigger { position:absolute; right:6px; top:10px; font-size:9px; padding:0 8px; color:#fff; line-height:16px; background:#434343; -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; -khtml-border-radius:8px; border-radius:8px; }
+#itunesmodule-panel .section .toplist .configure-trigger:hover { cursor:pointer; text-decoration:none; color:#d9d9d9; }
+
+#itunesmodule-panel .section .toplist .preferences { position:absolute; width:153px; min-height:288px; _height:288px; top:0; left:0; padding:10px 10px 0; background:#262626; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; }
+#itunesmodule-panel .section .toplist .preferences select { display:block; width:153px; height:257px; margin:0 auto 4px; background:#ddd; }
+#itunesmodule-panel .section .toplist .submit { display:block; width:90px; height:21px; margin:0 auto; font-size:10px; color:#fff; border:none; background:url(/appletw/2011/tw/global/elements/itunesmodule/pref_submit.gif) no-repeat 0 1px; }
+
+#itunesmodule-panel .section .toplist .listing { clear:both; margin-left:23px; margin-bottom:-6px; }
+#itunesmodule-panel .section .toplist .listing ol { margin:0; }
+#itunesmodule-panel .section .toplist .listing li { color:#d9d9d9; padding-bottom:0.8em; line-height:1.3em; font-size:10px; }
+#itunesmodule-panel .section .toplist .listing li strong { font-weight:bold; }
+#itunesmodule-panel .section .toplist .listing a { color:#d9d9d9; text-decoration:none; }
+#itunesmodule-panel .section .toplist .listing a:hover { text-decoration:underline; }
+
+#itunesmodule-panel .section .toplist a.storelink { padding:0 8px 0 2.4em; font-size:10px; color:#fff; background:url(/appletw/2011/tw/global/elements/arrows/morearrow_fff.gif) no-repeat 100% 50%; }
+
+/* splashes */
+#itunesmodule-panel .section .splashes { float:left; width:248px; min-height:298px; _height:298px; margin-right:12px; }
+#itunesmodule-panel .section .splashes a { display:block; height:140px; margin-bottom:16px; }
+#itunesmodule-panel .section .splashes a.last { float:none !important; width:auto !important; margin-bottom:0 !important; }
+
+/* bricks */
+#itunesmodule-panel .section .bricks { float:left; width:135px; min-height:298px; _height:298px; margin-right:0; }
+#itunesmodule-panel .section .bricks a { display:block; height:95px; margin-bottom:6px; }
+#itunesmodule-panel .section .bricks a.last { float:none !important; width:auto !important; margin-bottom:0 !important; }
+
+
+/* search results
+---------------------------------------------------------*/
+#itunesmodule-panel .search-results { position:absolute; width:940px; min-height:307px; _height:307px; top:0; padding:11px 21px; z-index:100; background:#fefefe url(/appletw/2011/tw/global/elements/itunesmodule/background.gif) no-repeat 0 100%; }
+#itunesmodule-panel .search-results h3 { margin-bottom:6px; font-size:14px; color:#fff; }
+#itunesmodule-panel .search-results h3.header { width:776px; margin-bottom:10px; padding-bottom:5px; font-weight:normal; font-size:18px; color:#fff; border-bottom:1px solid #666; }
+
+/* categories */
+#itunesmodule-panel .search-results .category { display:inline; float:left; width:144px; margin-left:14px; }
+#itunesmodule-panel .search-results .category.no-results { display:none; }
+
+#itunesmodule-panel .search-results .category ul { min-height:228px; _height:228px; padding-bottom:1px; margin-bottom:0; }
+#itunesmodule-panel .search-results .category ul li { padding-bottom:10px; *padding-bottom:5px; }
+#itunesmodule-panel .search-results .category ul li a { display:block; font-size:10px; line-height:1.3em; color:#fefefe; }
+#itunesmodule-panel .search-results .category ul li a.thumb { width:60px; height:60px; overflow:hidden; }
+#itunesmodule-panel .search-results .category ul li a.thumb img { max-width:60px; max-height:60px; }
+#itunesmodule-panel .search-results .category a.store { padding-right:8px; font-size:10px; color:#fff; background:url(/appletw/2011/tw/global/elements/arrows/morearrow_fff.gif) no-repeat 100% 50%; }
+
+/* also see */
+#itunesmodule-panel .search-results .also-search { float:right; width:147px; }
+#itunesmodule-panel .search-results .also-search h3.header { width:147px; margin-top:-1.85em; _position:relative; }
+#itunesmodule-panel .search-results .also-search a.store { padding:0 20px 0 0; font-size:14px; color:#fff; }
+
+/* close button */
+#itunesmodule-panel .search-results a.close { display:block; position:absolute; right:12px; bottom:12px; width:28px; height:28px; text-indent:-9999px; cursor:pointer; background:url(/appletw/2011/tw/global/elements/widget_close.png) no-repeat 0 0; behavior:url(/appletw/2011/global/scripts/lib/iepngfix.htc); }
+#itunesmodule-panel .search-results a.verbose-close { display:block; position:absolute; right:12px; bottom:12px; height:16px; padding:3px 30px 9px 0; color:#fff; cursor:pointer; background:url(/appletw/2011/tw/global/elements/widget_close.png) no-repeat 100% 0; _background:none; }
+
+/* loading */
+#itunesmodule-panel .search-results.loading .progress { position:absolute; width:30px; height:30px; top:46%; left:50%; margin-left:-43px; text-indent:-9999px; font-size:14px; background:url(/appletw/2011/tw/global/elements/itunesmodule/searching.gif) no-repeat 0 0; }
+#itunesmodule-panel .search-results.loading .category,
+#itunesmodule-panel .search-results.loading .also-search { visibility:hidden; }
+
+/* no results in any category */
+#itunesmodule-panel .search-results.no-results { text-align:center; }
+#itunesmodule-panel .search-results.no-results h3 { padding-top:13%; margin-bottom:0; }
+

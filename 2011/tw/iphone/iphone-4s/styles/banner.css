@@ -1,0 +1,31 @@
+/* Looking for iphone4 banner */
+#main .iphone4-banner { margin:0; position:absolute; margin-top:330px; z-index:11; font-size:14px; line-height:1.4em; text-align:left; }
+#main .iphone4-banner a.block { width:326px; background-color:#e5e5e5; color:#000;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5), color-stop(.5,#f1f1f1));
+	background:-moz-linear-gradient(top, #f9f9f9 0%, #f1f1f1 50%, #e5e5e5 100%);
+}
+
+#main .iphone4-banner a.block h2{font-size:14px; margin-left:115px;margin-bottom:4px;}
+#main .iphone4-banner a.block p{margin-left:115px; line-height:20px}
+
+#main .iphone4-banner a.block:hover { background-color:#f1f1f1;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#f1f1f1), color-stop(.5,#fff));
+	background:-moz-linear-gradient(top, #f9f9f9 0%, #fff 50%, #f1f1f1 100%);
+}
+#main .iphone4-banner p { margin-bottom:0; color:#333; font-size:1em; line-height:1.225em; }
+#main .iphone4-banner .icon { margin-top:-18px; position:absolute; z-index:1; top:31px; left:18px; }
+#main .iphone4-banner .dangly { display:block; width:14px; height:16px; position:relative; z-index:1; top:-16px; }
+
+#main .iphone4-banner.left { left:-10px; background-position:10%; border-radius:0 4px 4px 4px; border:1px solid #fff;
+	box-shadow:2px 0px 2px -1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,0.3), 0 3px 6px -1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2px 0px 2px -1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,0.3), 0 3px 6px -1px rgba(0,0,0,0.25);
+}
+#main .iphone4-banner.left a.block { padding:0 15px 11px 63px; }
+#main .iphone4-banner.left .dangly { left:-67px; background-image:url(/appletw/2011/tw/iphone/iphone-4s/includes/looking-for-iphone4-banner/images/dangly_left.png); }
+
+#main .iphone4-banner.right { right:-10px; background-position:5%; border-radius:4px 0 4px 4px; border:1px solid #fff;
+	box-shadow:2px 0px 2px -1px rgba(0,0,0,.2), 0 0 1px rgba(0,0,0,0.3), 0 3px 6px -1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2px 0px 2px -1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,0.3), 0 3px 6px -1px rgba(0,0,0,0.25);
+}
+#main .iphone4-banner.right a.block { padding:0 15px 15px 57px; }
+#main .iphone4-banner.right .dangly { right:-328px; background-image:url(/appletw/2011/tw/iphone/iphone-4s/includes/looking-for-iphone4-banner/images/dangly_right.png); }

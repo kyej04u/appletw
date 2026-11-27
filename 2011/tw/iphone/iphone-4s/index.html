@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW" lang="zh-TW">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+	<link id="globalheader-stylesheet" rel="stylesheet" href="/appletw/2011/global/nav/styles/navigation.css" type="text/css" />
+	<title>Apple - iPhone 4S - 卓越的 iPhone，如今更上層樓。</title>
+	<meta name="omni_page" content="iPhone - Index" />
+	<meta name="Description" content="更快的雙核心 A5 晶片800 萬像素攝錄鏡頭搭載全新光學組件與1080p HD 錄影功能，至今最令人讚歎的 iPhone。"  />
+		<script src="/appletw/2011/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/appletw/2011/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	
+<script src="/appletw/2011/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/ac_autogallery.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+	
+
+
+<script src="/appletw/2011/global/scripts/page_scroller.js" type="text/javascript" charset="utf-8"></script>
+
+	
+<script src="/appletw/2011/global/scripts/ac_media.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="/appletw/2011/global/styles/ac_media.css" type="text/css" />
+
+
+
+	
+
+
+
+<script src="/appletw/2011/global/scripts/overlay_panel.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/overlay_panel_screen.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/global/scripts/tooltip.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/appletw/2011/tw/iphone/iphone-4s/scripts/zoomerlay.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/tw/iphone/iphone-4s/scripts/nested_zoomerlay.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/tw/iphone/iphone-4s/scripts/transitions.js" type="text/javascript" charset="utf-8"></script>
+<script src="/appletw/2011/tw/iphone/iphone-4s/scripts/degradation.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" href="/appletw/2011/global/styles/overlay.css" type="text/css" />
+<link rel="stylesheet" href="/appletw/2011/global/styles/zoomerlay.css" type="text/css" />
+
+<script type="text/javascript">
+	Event.onDOMReady(function() {
+
+		if (/MSIE (5\.5|6\.|7\.|8\.)/.test(navigator.userAgent)) {
+			var link = $('camera-link');
+			link.href = link.getAttribute('data-fallback');
+			link.addClassName('zoom-gallery-fallback');
+
+			// initialize inline IE zoom gallery here
+			var inlineIEGallery = new AC.ViewMaster.Viewer($$('#ie-zoom-content'), 'zoom-gallery-fallback', 'zoom-gallery-fallback', {
+				manageZ: 1010,
+				showFirstOnStopMovie: true,
+				ensureInView: true,
+				escapeToClose: true,
+				heightFromFirstSection: true,
+				silentTriggers: true,
+				imageLinkAutoCaptions: true,
+				addSectionIdAsClassName: true,
+				useHTML5Tags: true});
+
+		} else {
+
+			// gallery overlay
+			var options = { contentWidth: 3264, contentHeight: 2448, thumbs: true, minHeight:758 };
+			if (typeof zoomerlayOptions != 'undefined') Object.extend(options, zoomerlayOptions);
+			var zoomerlay = new Zoomerlay('gallerythumb', 'galleryoverlay', 'galleryview', options);
+
+			// download link
+			var downloadLink = function (evt) {
+				var imageElement = $('galleryview').down('img');
+				var downloadlinkString = imageElement.readAttribute("data-download");
+				if (!downloadlinkString) {
+					downloadlinkString = imageElement.src;
+				}
+				this.setAttribute('href', downloadlinkString);
+
+				//track download
+				var imgName = $('galleryview').down('img').src;
+				imgName = imgName.substring(imgName.lastIndexOf('/appletw/2011/')+1,imgName.length);
+				AC.Tracking.trackClick({
+					events: 'event5',
+					eVar11: AC.Tracking.pageName() + ' - ' + imgName,
+					eVar16: 'downloads',
+					prop16: 'downloads'
+				}, this, 'd');
+			};
+			$('download-link').observe('click', downloadLink);
+
+			// ensure the deep links work
+			if (document.location.hash && document.location.hash.match(/zoomerlay-gallery\d*/)) {
+				AC.OverlayPanel.overlay.show(AC.OverlayPanel.overlay.sectionWithId('galleryoverlay'));
+			};
+
+			// Enlarge Tooltips
+			if (AC.Detector.iOSVersion() === false) {
+				new AC.Tooltip($$('a.zoom'));
+			};
+		}
+	});
+</script> 
+	<link rel="stylesheet" href="/appletw/2011/tw/global/styles/base.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/iphone/iphone-4s/styles/iphone.css" type="text/css" />
+	<link rel="stylesheet" href="/appletw/2011/tw/iphone/iphone-4s/styles/banner.css" type="text/css" />
+</head>
+<body class="overview" id="overview">
+<script type="text/javascript">
+	var searchSection = 'iphone';
+	var searchCountry = 'tw';
+</script>
+<script src="/appletw/2011/global/nav/scripts/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<nav id="globalheader" class="iphone">
+	<!--googleoff: all-->
+	<ul id="globalnav" role="navigation">
+		<li id="gn-apple"><a href="/appletw/2011/tw/"><span>Apple</span></a></li>
+		<li id="gn-store"><a href="http://store.apple.com/tw/"><span>購買</span></a></li>
+		<li id="gn-mac"><a href="/appletw/2011/tw/mac/"><span>Mac</span></a></li>
+		<li id="gn-ipod"><a href="/appletw/2011/tw/ipod/"><span>iPod</span></a></li>
+		<li id="gn-iphone"><a href="/appletw/2011/tw/iphone/"><span>iPhone</span></a></li>
+		<li id="gn-ipad"><a href="/appletw/2011/tw/ipad/"><span>iPad</span></a></li>
+		<li id="gn-itunes"><a href="/appletw/2011/tw/itunes/"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="/appletw/2011/tw/support/"><span>支援服務</span></a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/search/" method="post" class="search" id="g-search"><div class="sp-label">
+			<label for="sp-searchtext">Search</label>
+			<input type="text" name="q" id="sp-searchtext" accesskey="s" />
+		</div></form>
+		<div id="sp-magnify"><div class="magnify-searchmode"></div><div class="magnify"></div></div>
+		<div id="sp-results"></div>
+	</div>
+</nav>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+	
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+s.pageName=AC.Tracking.pageName()+" (tw)";
+s.channel="www.tw.ip"
+
+
+
+
+s.linkInternalFilters="javascript:,apple.com/tw/"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+<nav id="productheader">
+	<h2><a href="/appletw/2011/tw/iphone/"><img src="/appletw/2011/tw/iphone/iphone-4s/images/product_title.png" alt="iPhone" width="88" height="23"  /></a></h2>
+</nav>
+
+	<div id="main">
+		<div class="content" id="content">
+			<header class="hero center padbottom">
+				<div class="grid2col">
+					<div class="column first">
+						<img class="left" src="/appletw/2011/tw/iphone/iphone-4s/images/hero.jpg" width="484" height="521" alt=""  />
+					</div>
+					<hgroup class="column last">
+						<h1><img src="/appletw/2011/tw/iphone/iphone-4s/images/title.png" width="322" height="64" alt="iPhone 4S"  /></h1>
+						<p class="intro" style="width:330px;">雙核心 A5 晶片，搭載全新光學組件的 800 萬像素攝錄鏡頭，iOS 5 與 iCloud。卓越的 iPhone，如今更上層樓。</p>
+					</hgroup>
+				</div>
+
+				<nav class="scroll-tiles"><ul><li>
+					<a class="scrollToAnchor" href="#performance"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_performance.png" alt="" width="167" height="89"  /> <span>效能</span> </a></li><li>
+					<a class="scrollToAnchor" href="#camera"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_camera.png" alt="" width="167" height="89"  /> <span>800 萬像素攝錄鏡頭</span> </a></li><li>
+					<a class="scrollToAnchor" href="#hdvideo"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_hd_video.png" alt="" width="167" height="89"  /> <span>1080p HD 錄影</span> </a></li><li class="last-child">
+					<a class="scrollToAnchor" href="#retina"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_retina_display.png" alt="" width="167" height="89"  /> <span>Retina 顯示器</span> </a></li><li>
+					<a class="scrollToAnchor" href="#ios"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_ios.png" alt="" width="167" height="89"  /> <span>iOS</span> </a></li><li>
+					<a class="scrollToAnchor" href="#icloud"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_icloud.png" alt="" width="167" height="89"  /> <span>iCloud</span> </a></li><li>
+					<a class="scrollToAnchor" href="#facetime"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_face_time.png" alt="" width="167" height="89"  /> <span>FaceTime</span> </a></li><li class="last-child">
+					<a class="scrollToAnchor" href="#app-store"> <img src="/appletw/2011/tw/iphone/iphone-4s/images/nav_app_store.png" alt="" width="167" height="89"  /> <span>App Store</span> </a>
+				</li></ul></nav>
+			</header>
+
+			<section class="performance row flushpad divider-down" id="performance">
+				<span class="new-tag violator-topleft"></span>
+				<div class="gallery autogallery padleft padright">
+					<hgroup class="headline-icon">
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/performance_icon.png" alt="" width="65" height="65"  />
+						<div class="headline">
+							<h1>雙核心 A5 晶片，歷來最強大的 iPhone 處理器。</h1>
+						</div>
+					</hgroup>
+					<p>A5 晶片具備兩個核心，可提供高達 2 倍的處理動力，以及更快達 7 倍的繪圖效能<sup>1</sup>。感受它的效果，就是一個「快」字。iPhone 4S 反應快速且靈敏，在你開啓應用程式、瀏覽網頁、玩遊戲與進行每件事情時，就能看出明顯的差異。不論你處理任何事，都可持續不間斷。因為 A5 晶片非常節能，讓 iPhone 4S 具有優異的電池續航力。</p>
+
+					<div class="gallery-view crop" id="gallery-performance">
+						<div class="gallery-content" id="gallery-performance-graphics">
+							<figure>
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/performance_graphics.jpg" alt="" width="821" height="329"  />
+								<figcaption>iPhone 4S 最適合遊戲玩家使用，A5 晶片將繪圖效能推升快達 7 倍，遊戲運行更流暢，畫面更栩栩如生。而需要密集繪圖運算的應用程式執行起來也更加優異。</figcaption>
+							</figure>
+						</div>
+					</div><!--/view-->
+					<nav class="toggle-nav three-up"><ul><li>
+						<a class="gallery-performance" href="#gallery-performance-graphics">繪圖晶片</a></li><li>
+						<a class="gallery-performance" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/performance-speed.html#gallery-performance-speed">效能</a></li><li>
+						<a class="gallery-performance" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/performance-battery.html#gallery-performance-battery">電池</a>
+					</li></ul></nav>
+				</div><!--/gallery-->
+			</section><!--/performance-->
+
+			<section class="camera row flushpad divider-down" id="camera">
+				<span class="new-tag violator-topleft"></span>
+				<div class="gallery video-gallery padleft padright padbottom">
+					<div class="gallery-view" id="zoom-gallery-fallback">
+						<div class="gallery-content" id="ie-zoom-content">
+							<hgroup class="headline-icon">
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/camera_icon.png" alt="" width="65" height="65" />
+								<div class="headline">
+									<h1>讓手機直呼不敢當的高規格攝錄鏡頭</h1>
+								</div>
+							</hgroup>
+							<div class="side-divider side-video">
+								<a id="camera-link" class="video-thumb wrap gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/01.html#zoomerlay-gallery1" data-fallback="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/camera_gallery_fallback.html#fallback">
+									<span class="image">
+										<img src="/appletw/2011/tw/iphone/iphone-4s/images/camera_videothumb.jpg" width="141" height="82" alt="">
+									</span>
+									<span class="more">圖庫</span>
+								</a>
+							</div>
+
+							<div id="galleryoverlay" class="overlaycontent zoomerlaycontent sneaky">
+	<h2>照片圖庫：未經修飾的照片集，由 iPhone 4S 所拍攝。</h2>
+	<div class="mask">
+		<div class="tap-command">
+			<span class="zoom-in">任意點按放大</span><span class="zoom-out">任意點按縮小</span>
+		</div>
+		<div id="galleryview"></div>
+	</div>
+	<div class="footer">
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/01.html#zoomerlay-gallery1"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/01_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/02.html#zoomerlay-gallery2"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/02_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/03.html#zoomerlay-gallery3"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/03_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/04.html#zoomerlay-gallery4"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/04_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/05.html#zoomerlay-gallery5"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/05_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/06.html#zoomerlay-gallery6"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/06_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/07.html#zoomerlay-gallery7"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/07_thumb.jpg" width="63" height="40" /></a>
+		<a class="gallerythumb" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-gallery/08.html#zoomerlay-gallery8"><img src="/appletw/2011/tw/iphone/iphone-4s/includes/camera-gallery/08_thumb.jpg" width="63" height="40" /></a>
+		<div class="button-wrapper"><a class="download" id="download-link" href=""><span class="arrow">下載原始照片</span></a></div>
+	</div>
+</div>
+
+
+							<p>這是有史以來手機上最好的攝錄鏡頭，搭載全新光學組件，也許就是你手邊唯一所需的相機。因為每張照片背後，都有 800 萬像素解析度與專用 <i>f</i>/2.4 更大光圈鏡頭當靠山。此外還有提升後的背照式感光元件、絕佳的自動白平衡、進階色彩校正、臉部偵測，以及減少動態模糊等功能。這意味著不論多少人數、多少光線，多少動作要捕捉，一切都將栩栩如生，等你看到照片就知道了。</p>
+						</div><!--/gallery-content-->
+					</div><!--/gallery-view-->
+				</div><!--/gallery-->
+				<div class="gallery-toggle gallery autogallery padleft padright">
+					<div class="gallery-view" id="gallery-camera">
+						<div class="gallery-content" id="gallery-camera-megapixels">
+							<span class="over-figure-caption">先進光學組件結合專用鏡頭、更大光圈與全新感光元件，可以拍出令人讚歎的照片。</span>
+							<figure>
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/camera_megapixels.jpg" alt="" width="820" height="400"  />
+								<figcaption>iPhone 4S 攝錄鏡頭具備 800 萬像素，比 iPhone 4 攝錄鏡頭的像素值一舉多出 60%。更高像素值意味更高的滿載量，集光更豐富完整。增加了幾百萬像素與更多光線，你將在影像解析度與細節看到截然不同的效果。</figcaption>
+							</figure>
+						</div>
+					</div><!--/view-->
+					<nav class="toggle-nav three-up"><ul><li>
+						<a class="gallery-camera" href="#gallery-camera-megapixels">800 萬像素</a></li><li>
+						<a class="gallery-camera" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-recognition.html#gallery-camera-recognition">全新光學組件</a></li><li>
+						<a class="gallery-camera" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/camera-editing.html#gallery-camera-editing">編輯</a></li>
+					</ul></nav>
+				</div><!--/gallery-->
+			</section><!--/camera-->
+
+			<section class="hdvideo row flushpad divider-down" id="hdvideo">
+				<span class="new-tag violator-topleft"></span>
+				<div class="gallery autogallery video-gallery padleft padright">
+					<div class="gallery-view" id="gallery-hdvideo-video">
+						<div class="gallery-hdvideo-default gallery-content" id="video-hdvideo-default">
+							<hgroup class="headline-icon">
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/hdvideo_icon.jpg" alt="" width="65" height="65"  />
+								<div class="headline">
+									<h1>影片錄製，令人讚歎的 1080p HD。</h1>
+								</div>
+							</hgroup>
+							<div class="side-divider side-video">
+								<a class="video-thumb wrap gallery-hdvideo-video" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/hdvideo-video.html#hdvideo-video"><span class="image"><span class="play"></span><img src="/appletw/2011/tw/iphone/iphone-4s/images/hdvideo_videothumb.jpg" width="141" height="82" alt=""></span><span class="more">進一步了解運作方式</span></a>
+							</div>
+							<p>隨時隨地都能拍攝令人驚豔的 1080p  HD 影片。全新光學組件，讓光線更精準，色彩更飽滿，萬物看起來都比印象中更加美好。影像穩定功能修正搖晃的畫面，你亦可直接在 iPhone 上剪輯影片，豐富生活影像，隨即拍攝隨即分享。</p>
+						</div><!--/gallery-content-->
+					</div><!--/gallery-view-->
+				</div><!--/gallery-->
+
+				<div class="gallery autogallery padleft padright">
+					<div class="gallery-view" id="gallery-hdvideo">
+						<div class="gallery-content" id="gallery-hdvideo-1080p">
+							<figure>
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/hdvideo_1080p.jpg" alt="" width="820" height="526"  />
+								<figcaption>以每秒 30 影格錄製令人讚歎的 1080p HD 影片，先進的背照式感光元件與超大光圈，可捕捉更多光線。提升後的自動白平衡功能，讓色彩更加準確。抑制時序雜訊功能，讓你在低光源時亦能拍攝絕佳影片。</figcaption>
+							</figure>
+						</div>
+					</div><!--/view-->
+					<nav class="toggle-nav three-up"><ul><li>
+						<a class="gallery-hdvideo" href="#gallery-hdvideo-1080p">1080p HD 影片</a></li><li>
+						<a class="gallery-hdvideo" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/hdvideo-stabilization.html#gallery-hdvideo-stabilization">影像穩定功能</a></li><li>
+						<a class="gallery-hdvideo" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/hdvideo-editing.html#gallery-hdvideo-editing">剪輯</a></li>
+					</ul></nav>
+				</div><!--/gallery-->
+			</section><!--/hd video-->
+
+			<section class="ios5 row flushpad divider-down" id="ios">
+				<span class="new-tag violator-topleft"></span>
+				<div class="padleft padright">
+					<hgroup class="headline-icon"> 
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_icon.png" width="64" height="64" alt=""  /> 
+						<div class="headline"><h1>iOS。世上最先進的行動作業系統，無人可比的簡單易用。</h1></div> 
+					</hgroup> 
+					<p>隨著每次 iOS 更形演進，你進行各項作業更加輕鬆。這正是使 iOS 領先世代的原因所在。iOS 5 向前更躍進一步，將超過 200 種新功能引進 iPhone 4S。這些是我們喜愛的部份。</p>
+				</div>
+
+				<div class="gallery autogallery autogallery-slide slide-gallery slide-gallery-new flushleft flushright"> 
+					<div class="gallery-view" id="ios-gallery"> 
+						<div class="gallery-content grid3col" id="ios-gallery-slide-1"> 
+							<figure class="column first"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_notification.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>通知中心</h2> 
+									<p>這是顯示最新狀況的地方。預覽你最近的文字、電子郵件訊息、提醒事項、朋友邀約等等。</p>
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_imessage.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>iMessage</h2> 
+									<p style="width:180px;">發送訊息到其他 iOS 5 使用者，則數沒有限制。透過 Wi-Fi 網路不會另外收費<sup>2</sup>。你可在一台裝置上起頭談天，也可換到別台繼續聊。</p>
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_twitter.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>Twitter 整合功能</h2> 
+									<p>在設定裡登錄一次，就可直接在 Safari、照片、相機、YouTube 與地圖開始 Tweet。</p> 
+								</figcaption> 
+							</figure> 
+						</div><!--/gallery-content--> 
+						<div class="gallery-content grid3col ios-gallery-slide-2" id="ios-gallery-slide-2"> 
+							<figure class="column first"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_reminders.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>提醒事項</h2> 
+									<p>你可建立待辦事項列表，辦完一件就勾銷一件。甚至加入到期日與所在位置。 </p>
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_photos.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>照片 </h2> 
+									<p>將你的照片裁切、旋轉、調整與消除紅眼。一切全在 iPhone 裡進行。</p>
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_camera.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>「相機」強化功能</h2> 
+									<p>現在你可直接從鎖定螢幕存取「相機」應用程式。只要按下音量加大按鈕、對準目標，就能拍下照片。</p> 
+								</figcaption> 
+							</figure>
+						</div><!--/gallery-content--> 
+						<div class="gallery-content grid3col ios-gallery-slide-3" id="ios-gallery-slide-3"> 
+							<figure class="column first"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_newsstand.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>書報攤</h2> 
+									<p style="width:180px;">在此瀏覽你訂閱的各種報刊雜誌應用程式，甚至訂閱新刊物。你能飽覽群冊，並將全數歸於一處。</p> 
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_safari.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>Safari</h2> 
+									<p>用閱讀器顯示網頁文章不會有廣告或凌亂頁面。閱讀列表讓你儲存文章連結以供回頭細讀。</p> 
+								</figcaption> 
+							</figure> 
+							<figure class="column"> 
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/ios_pcfree.jpg" width="224" height="510" alt=""  /> 
+								<figcaption> 
+									<h2>PC Free</h2> 
+									<p>開箱之後，你可用無線方式開通與設定 iPhone，不需用到 Mac 或 PC。</p> 
+								</figcaption> 
+							</figure> 
+						</div><!--/gallery-content--> 
+					</div><!--/gallery-view--> 
+					<nav class="simple-nav"> 
+						<ul> 
+							<li> 
+								<a class="ios-gallery" href="#ios-gallery-slide-1"></a></li><li> 
+								<a class="ios-gallery" href="#ios-gallery-slide-2"></a></li><li> 
+								<a class="ios-gallery" href="#ios-gallery-slide-3"></a></li><li> 
+							</li> 
+						</ul> 
+					</nav> 
+					<nav class="paddle-nav"><ul><li> 
+						<a class="arrow prev ios-gallery" id="prev-button" href="#previous"><b>上一頁</b></a></li><li> 
+						<a class="arrow next ios-gallery" id="next-button" href="#next"><b>下一頁</b></a> 
+					</li></ul></nav> 
+				</div><!--/gallery--> 
+			</section><!--/ios-->
+
+			<section class="icloud row flushpad divider-down" id="icloud">
+				<span class="new-tag violator-topleft"></span>
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/icloud_icon.png" alt="" width="65" height="65"  />
+						<div class="headline">
+							<h1>iCloud。你的內容，全面進駐你所有裝置。</h1>
+						</div>
+					</hgroup>
+					<p style="width:780px;">iCloud 是管理你所有內容最容易的方法，因為它能接手為你管理一切。iCloud 儲存你的照片、應用程式、電子郵件、聯絡人資訊、行事曆、文件，與更多內容，並以無線方式推送到所有裝置之中。它會自動進行，毫不費力且天衣無縫。它就是管用。<sup>3</sup></p>
+				</div>
+				<div class="gallery autogallery">
+					<div class="gallery-view crop" id="gallery-icloud">
+						<div class="gallery-content" id="gallery-icloud-photo-stream">
+							<figure>
+								<img src="/appletw/2011/tw/iphone/iphone-4s/images/icloud_photo_stream.jpg" alt="" width="820" height="384"  />
+								<figcaption>透過照片串流功能，你可在某一台 iOS 裝置上拍照，它會自動出現在你其他所有裝置上，包括你的 Mac 或 PC。就這樣，你的照片隨即就出現，供你到處向人炫耀。</figcaption>
+							</figure>
+						</div>
+					</div><!--/view-->
+					<nav class="toggle-nav three-up"><ul><li>
+						<a class="gallery-icloud" href="#gallery-icloud-photo-stream">照片串流</a></li><li>
+						<a class="gallery-icloud" href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/iphone/iphone-4s/includes/icloud-documents-in-the-cloud.html#gallery-documents-in-the-cloud">文件雲端服務</a>
+					</li></ul></nav>
+				</div><!--/gallery-->
+			</section><!--/icloud-->
+
+			<section class="retina row divider-down flushpad grid2col" id="retina">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img class="left" src="/appletw/2011/tw/iphone/iphone-4s/images/retina_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>Retina 顯示器。顯然出色。</h1></div>
+					</hgroup>
+					<p>你在 iPhone 4S 上看到的一切，都會是最銳利、最亮麗的。Retina 顯示器是歷來最高解析度的手機螢幕。事實上，它的像素密度已經高到讓肉眼無法分辨出個別的像素，但毫無疑問，你將能看到清晰的文字、銳利的圖形，以及令人驚豔的影像。比列印出來的頁面更加出色，你將完全沉浸其中。</p>
+				</div>
+				<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/retina.png" width="335" height="430" alt=""  />
+			</section><!--/retina-->
+
+			<section class="facetime row flushpad divider-down" id="facetime">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img class="left" src="/appletw/2011/tw/iphone/iphone-4s/images/facetime_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>FaceTime，面對面交談更有感覺了。</h1></div>
+					</hgroup>
+					<p>透過 Wi-Fi 無線網路連結 iPhone 與 iPhone、iPad 2、iPod touch 或 Mac，FaceTime 能讓你聞其聲亦見其人<sup>4</sup>。因此，即使分散大江南北，你們都能隨時相聚。進行 FaceTime 通話和打電話一樣容易。想看看誰，就點點他的名字，大家露臉，揮手說嗨。你將不會錯過重大活動、重要會議或歡樂的笑臉。有誰能見到你而不覺得高興呢？</p>
+					<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/facetime.png" width="457" height="547" alt=""  />
+				</div>
+			</section><!--/facetime-->
+
+			<section class="app-store row flushpad divider-down" id="app-store">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/app_store_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>App Store。超過 500,000 個應用程式，讓你優游工作、遊樂，與介於其間的每件事。</h1></div>
+					</hgroup>
+					<p>內建於你 iPhone 裡的應用程式只是個開端。在 App Store 瀏覽，成千上萬個應用程式，分門別類應有盡有，許多應用程式還是免費的。你能下載多少應用程式，你的 iPhone 就增強幾分本事。每次造訪 App Store 都充滿了無限的可能。 </p>
+					<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/app_store.png" width="484" height="309" alt=""  />
+				</div>
+			</section>
+
+			<section class="airplay row flushpad divider-down">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img class="left" src="/appletw/2011/tw/iphone/iphone-4s/images/airplay_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>AirPlay 從小螢幕躍升大螢幕</h1></div>
+					</hgroup>
+					<p>透過 AirPlay，你可將你 iPhone 上的內容，以無線方式透過 Apple TV，串流傳輸至你的 HDTV 或揚聲器上<sup>5</sup>。有了 AirPlay 鏡像輸出功能，你在 iPhone 看到什麼、使用什麼，都能同時在 HDTV 上顯示。</p>
+					<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/airplay.jpg" width="520" height="380" alt=""  />
+				</div>
+			</section><!--/airplay-->
+
+			<section class="airprint row flushpad divider-down">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img class="left" src="/appletw/2011/tw/iphone/iphone-4s/images/airprint_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>AirPrint。列印一切皆無線。</h1></div>
+					</hgroup>
+					<p>透過 Wi-Fi，直接從你的 iPhone 列印你的電子郵件、照片、網頁及文件<sup>6</sup>。毋須下載額外的軟體，毋須安裝驅動程式，毋須插上纜線來連接。只要點按幾下，就可把 iPhone 螢幕上看到的東西列印成手中的實體文件。</p>
+				</div>
+				<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/airprint.jpg" width="532" height="411" alt=""  />
+			</section><!--/airprint-->
+
+			<section class="connectivity grid2col row flushpad divider-down" id="connectivity">
+				<div class="column first">
+					<img class="center" src="/appletw/2011/tw/iphone/iphone-4s/images/connectivity.png" width="287" height="523" alt=""  />
+				</div>
+				<div class="column last">
+					<hgroup class="headline-icon">
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/connectivity_icon.png" alt="" width="65" height="74"  />
+						<div class="headline"><h1>這麼說吧：更好、更快、<br />更貼近全世界。</h1></div>
+					</hgroup>
+					<p>iPhone 4S 是首款智慧型切換雙天線發射與接收訊號的手機，所以通話品質格外良好。它還將最大 HSDPA 數據傳輸速度倍增至 14.4 Mbps<sup>7</sup>。這意味著更快速的連線、更快速的載入更新，與更快速的下載。iPhone 4S 是全球型手機，你幾乎可在任何地方使用。無論你是 GSM 或 CDMA 用戶，都可在全球 200 多個國家進行漫遊。</p>
+					<aside class="callout inset">
+						<h1>最大數據下載速度 (HSPDA)</h1>
+						<dl class="chart selfclear">
+							<dt>iPhone 4S</dt>
+							<dd class="iphone4s"><span>14.4</span> Mbps</dd>
+							<dt>iPhone 4</dt>
+							<dd class="iphone4"><span>7.2</span> Mbps</dd>
+						</dl>
+					</aside>
+				</div>
+			</section><!--/connectivity-->
+
+			<section class="built-in row flushpad divider-down" id="built-in">
+				<div class="padleft padright">
+					<hgroup class="headline-icon">
+						<img src="/appletw/2011/tw/iphone/iphone-4s/images/built_in_icon.png" width="65" height="65" alt=""  />
+						<div class="headline"><h1>內建應用程式，能勝任每件事，讓你也能如此。</h1></div>
+					</hgroup>
+					<p>你將在 iPhone 4S 上以非凡的方式進行日常作業：拍攝令人讚歎的照片與 HD 影片，透過 FaceTime 看看好友及家人，在 Retina 顯示器上瀏覽網頁，收發電子郵件，傳送訊息，設定提醒事項，查看行事曆。而且遠不止此。</p>
+				</div>
+				<img class="center section-hero" src="/appletw/2011/tw/iphone/iphone-4s/images/built_in.png" width="659" height="404" alt=""  />
+			</section>
+		</div><!--/content-->
+	</div><!--/main-->
+
+	<div class="sosumi">
+		
+		<ol>
+			<li>與前一代 iPhone 相較，速度快達 2 倍。</li>
+			<li>可能適用一般電信數據傳輸費率。無法使用 iMessage 時，可能會以簡訊形式傳送訊息；適用電信傳訊費用。&nbsp;</li>
+			<li>iCloud 需要 iPhone 3GS 或後續機型、iPod touch (第 3 代與第 4 代)、iPad 或 iPad 2 裝載 iOS 5； 或 Mac 安裝 OS X Lion， 或 PC 安裝  Windows Vista 或  Windows 7  (建議使用 Outlook 2007 或 2010 存取聯絡人資訊與行事曆)。部份功能需有 Wi-Fi 連線。部份功能未在所有國家提供。部份服務存取數目限制在 10 台裝置以下。</li>
+			<li>需要具有 FaceTime 功能的 Mac 以及 Internet 連線，或具有 FaceTime 功能的 iOS 裝置以及 Wi-Fi 連線。並非適用所有地區。</li>
+			<li>AirPlay 僅與第二代 Apple TV 相容。第二代 Apple TV 僅於部分地區供應。</li>
+			<li>需要具備 AirPrint 功能的印表機。</li>
+			<li>服務項目與網路速度視電信供應商系統而定。</li>	
+		</ol>
+	</div>
+
+	<footer id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/appletw/2011/tw/">首頁</a></li>
+				<li>iPhone</a></li>
+			</ol>
+		</div><!--/breadory-->
+<p class="gf-buy">請至 <a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/store/">Apple Online Store</a> 線上選購 (0800-020-021)。或尋找你附近的<a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/reseller/">經銷商</a>前往選購。</p>
+
+<ul class="gf-links piped">
+	<li><a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/about/"  class="first" >Apple 資訊</a></li>
+	<li><a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/sitemap/">網站地圖</a></li>
+	<li><a href="/appletw/2011/tw/hotnews/">發燒新聞</a></li>
+	<li><a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/contact/" class="contact_us">與我們聯絡</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="/appletw/2011/tw/home/elements/taiwan.png" alt="" border="0" height="22" width="22"> </a></li>
+</ul>
+    
+<div class="gf-sosumi">
+	<p>Copyright © 2011 Apple Inc. 保留一切權利。</p>
+	<ul class="piped">
+		<li><a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/legal/terms/site.html" class="first">法律資訊</a></li>
+		<li><a href="https://web.archive.org/web/20111006164305/http://www.apple.com/tw/privacy/">隱私權政策</a></li>
+	</ul>
+</div>
+
+	</footer><!--/globalfooter-->
+</body>
+</html>

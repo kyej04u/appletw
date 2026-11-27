@@ -1,0 +1,21 @@
+
+#featured hr {
+	margin-top: -7px !important;
+	margin-bottom: 1px;
+}
+
+/* fix for rounded corners display issue in IE6 + 7 */
+div.column.first div#menu div.module .tl,
+div.column.first div#menu div.module .tr, {
+	padding-top: -1px;
+	border-top: 1px transparent #ccc;
+	width: 100%;
+}
+
+/* fix for extra whitespace above bulleted lists in lower three-column area */
+#resourceshome .grid3col .column.first .sidebar,
+#resourceshome .grid3col .column .sidebar,
+#resourceshome .grid3col .column.last .sidebar {
+	margin-top: -20px !important;
+}
+

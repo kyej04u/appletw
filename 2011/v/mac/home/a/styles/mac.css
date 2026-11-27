@@ -1,0 +1,127 @@
+/*--- layout ---*/
+html, body { background-color:#f5f6f7; }
+#main { width:980px; margin:0 auto; }
+.content { width:980px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; box-shadow:0 1px 3px rgba(0,0,0,.35); -webkit-box-shadow:0 1px 3px rgba(0,0,0,.35); -moz-box-shadow:0 1px 3px rgba(0,0,0,.35); }
+
+
+/* Misc
+------------------------*/
+.replaced { text-indent:-1000em; overflow:hidden; height:0; margin:0; padding:0; }
+
+a.block { display:block; color:inherit; text-decoration:none; }
+a.block * { cursor:pointer; }
+a.block span.link,
+a.block span.more { color:#08c; }
+a.block span.more { white-space:nowrap; display:block; float:left; text-align:left; padding-right:10px; background:url(/appletw/2011/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 50%; }
+a.block:hover span.link,
+a.block:hover span.more { text-decoration:underline; }
+
+a.close { color:#888; display:block; float:left; padding-left:18px; background:url(/appletw/2011/global/elements/buttons/close.png) no-repeat 0 0; text-decoration:none; text-transform:lowercase; }
+a.close:hover { color:#08c; background-position:0 -50px; }
+a.close.right { float:right; padding-right:18px; padding-left:0; background-position:100% 0; text-transform:none; }
+a.close.right:hover { background-position:100% -50px; }
+a.close.dark { color:#fff; background-image:url(/appletw/2011/global/elements/buttons/close_dark_bg.png); }
+a.close.dark:hover { color:#00a2ff; background-image:url(/appletw/2011/global/elements/buttons/close_dark_bg.png); }
+
+.right { float:right; }
+.left { float:left; }
+
+#main .sosumi { padding:18px 20px 0; }
+
+
+/* Product Browser
+------------------------*/
+.productbrowser li.pb-macbookair { margin-left:5px; }
+.productbrowser li.pb-macbookpro { margin-left:35px; margin-right:12px; }
+.productbrowser li.pb-imac       { margin-left:18px; margin-right:18px; }
+.productbrowser li.pb-macosx     { margin-left:-20px; }
+
+.productbrowser li.pb-magicmouse     { margin-left:-12px; }
+.productbrowser li.pb-magictrackpad  { margin-left:-32px; margin-right:4px; }
+.productbrowser li.pb-airportexpress { margin-left:-4px; }
+.productbrowser li.pb-airportextreme { margin-left:-13px; }
+.productbrowser li.pb-timecapsule    { margin-left:-6px; }
+
+.productbrowser li.pb-ilife { margin-right:16px; }
+.productbrowser li.pb-iwork { margin-right:10px; }
+.productbrowser li.pb-safari { margin-right:-1px; }
+.productbrowser li.pb-finalcut { margin-left:4px; margin-right:3px; }
+
+.productbrowser li.pb-displays,
+.productbrowser li.pb-displays a { width:150px; }
+
+.productbrowser li.pb-macosxserver { margin-left:6px; margin-right:12px; }
+.productbrowser li.pb-macproserver { margin-right:16px; }
+.productbrowser li.pb-ard          { margin-right:19px; }
+
+
+/* Promos
+------------------------*/
+.promo h2 { color:#000; font-weight:normal; margin-bottom:.25em; }
+.promo p { color:#777; }
+
+
+/* Showcase
+------------------------*/
+#showcase { margin-bottom:10px; }
+#showcase .content { float:left; width:320px; height:210px; padding:0; color:#888; }
+#showcase .content h2 { font-size:1.2em; font-weight:bold; }
+
+
+#showcase .promo-lead,
+#showcase .promo-lead .lead { float:none; width:980px; height:410px; margin:0 0 10px; }
+#showcase .promo-lead { position:relative; font-size:16px; line-height:1.5; color:#000; }
+#showcase .promo-lead a.block { color:#000; }
+#showcase .promo-lead .lead { display:block; }
+
+#showcase.promo-rotation .promo-lead .lead { position:absolute; }
+
+
+#showcase .promos { margin-bottom:10px; zoom:1; *margin-right:-2px; }
+#showcase .promos:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#showcase .promos a { margin-bottom:0; margin-left:8px; }
+#showcase .promos a:nth-child(1n) { margin-left:10px; }
+#showcase .promos a.first { margin-left:0; }
+
+#showcase.promo-rotation .promos { position:relative; height:210px; }
+#showcase.promo-rotation .promos a { position:absolute; top:0; }
+#showcase.promo-rotation .promos a.first { left:0; }
+#showcase.promo-rotation .promos a.second { left:320px; *left:322px; }
+#showcase.promo-rotation .promos a.third { right:0; }
+
+
+#showcase .content img { display:block; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+
+
+/* footer
+------------------------*/
+#globalfooter { margin-top:12px; }
+#globalfooter p.sosumi { text-align:right; margin:-26px 0 0; *margin-top:-17px; }
+
+/* Buy Strip
+------------------------*/
+#buystrip { margin:0 auto; _height:156px; _overflow:hidden; position:relative; }
+#buystrip img { clear:none; }
+#buystrip .column p { width:155px; }
+#buystrip .column.first { height:136px; padding-top:25px; position:relative; }
+#buystrip .column.first h2 { width:96px; margin:-8px 10px 0 10px; font-weight:normal; line-height:21px; position:relative; z-index:1; }
+#buystrip .column.first .right { margin:-5px 0 0 -80px; _position:relative; *z-index:1; }
+#buystrip .column.last p { width:175px; }
+#buystrip #comparison { position:absolute; padding-top:13px; bottom:10px; width:221px; }
+#buystrip #comparison .family { margin:-8px 18px -10px 10px; }
+
+
+/* pill buttons */
+#main a.pillbutton { display:inline-block; position:relative; padding-right:43px; font-size:15px; line-height:1.3em; color:#fff; text-decoration:none; outline:none; z-index:2; }
+#main a.pillbutton span,
+#main a.pillbutton b { display:block; width:auto; padding:15px 0; text-align:left; }
+#main a.pillbutton span { padding-right:8px; padding-left:25px; background:url(/appletw/2011/global/elements/buttons/pillbevel_leftcap.png) no-repeat 0 50%; _background-image:url(/appletw/2011/global/elements/buttons/pill_leftcap.gif); }
+#main a.pillbutton b { position:absolute; width:43px; top:0; right:0; text-indent:-9999px; background:url(/appletw/2011/global/elements/buttons/pillbevel_rightcap.png) no-repeat 0 50%; _background-image:url(/appletw/2011/global/elements/buttons/pill_rightcap.gif); }
+#main a.pillbutton:hover,
+#main a.pillbutton:hover *,
+#main a.pillbutton:focus { color:#e6e6e6; }
+
+#main a.pillbutton, x:-moz-any-link { display:block; width:8.5em; margin:0 auto; } /* this is for firefox2 because it's dumb when it comes to inline-block */
+#main .endState a.pillbutton, x:-moz-any-link { width:16em; } /* this is for firefox2 because it's dumb when it comes to inline-block */
+#main a.pillbutton, x:-moz-any-link, x:default,
+#main .endState a.pillbutton, x:-moz-any-link, x:default { display:inline-block; width:auto; } /* firefox3 reset */

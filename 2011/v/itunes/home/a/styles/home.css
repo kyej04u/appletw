@@ -1,0 +1,111 @@
+/* General Styles */
+.gradient { background-color:#f5f5f5;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f5f5f5));
+    background:-moz-linear-gradient(top, #fbfbfb, #f5f5f5);
+}
+a.gradient:hover,
+a .gradient:hover { cursor:pointer; background-color:#fdfdfd;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fcfcfc));
+    background:-moz-linear-gradient(top, #fdfdfd, #fafafa);
+}
+
+.inset { box-shadow:inset rgba(0,0,0,.3) 0 1px 3px; border:1px solid #d9d9d9; }
+.inset:nth-child(1n) { border:none; }
+
+
+/* Simple Dot Navs */
+.gallery .dots-nav { text-align:center; -webkit-transform:translateZ(0); *margin-top:45px; }
+.gallery .dots-nav li { margin:0 2px; }
+.gallery .dots-nav li { display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1; overflow:hidden; }
+.gallery .dots-nav li a { display:block; width:8px; height:8px; background:url(/appletw/2011/global/elements/slider/dot20070414.gif) no-repeat; text-indent:-9999px; }
+.gallery .dots-nav li a:hover { background-position:0 -8px; }
+.gallery .dots-nav li a.active { background-position:0 -16px; }
+
+
+/* Hero */
+#main .hero { width:974px; padding:3px; margin-bottom:10px; }
+#main .hero:nth-child(1n) { margin-bottom:9px; }
+#main .hero .gradient { width:auto; padding:0 57px 30px; }
+#main .hero .gradient .flushpad,
+#main .hero .gradient .flushleft { margin-left:-60px; }
+#main .hero .gradient .flushpad,
+#main .hero .gradient .flushright { margin-right:-60px; }
+#main .hero .gradient .flushpad,
+#main .hero .gradient .padleft { padding-left:60px; }
+#main .hero .gradient .flushpad,
+#main .hero .gradient .padright { padding-right:60px; }
+#main .hero .column.first { width:370px; }
+#main .hero .column.last { width:507px; }
+
+#main .hero hgroup { padding:77px 0 20px; }
+#main .hero hgroup h1 { position:relative; z-index:2; }
+#main .hero hgroup p.intro { color:#777; }
+
+
+/* Download Pullout */
+#main .hero .download { width:299px; padding:14px 0 0; margin-bottom:.5em; background:url(/appletw/2011/v/itunes/home/a/images/download_bg.jpg) no-repeat 50% 50%; }
+#main .hero .download h1 img { margin:0 auto; }
+#main .hero .download .big-blue-button { display:block; height:47px; padding:0 0 0 70px; line-height:47px; font-size:1.285em; color:#fff; text-shadow:0 -1px 0 rgba(0,0,0,.6); border:1px solid #4a86c1; border-top-color:#a0cff2; border-bottom-color:#1d569b; background:#408edb;
+	background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(47,120,208)),color-stop(1, rgb(81,168,230)));
+	background-image:-moz-linear-gradient(center bottom,rgb(47,120,208) 0%,rgb(81,168,230) 100%);
+	box-shadow:rgba(0,0,0,.25) 0 1px 2px;
+}
+#main .hero .download:hover .big-blue-button,
+#main .hero .download:active .big-blue-button { text-decoration:none; border:1px solid #376daa; background:#3a87d7;
+	background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(42,106,184)),color-stop(1, rgb(71,149,204)));
+	background-image:-moz-linear-gradient(center bottom,rgb(42,106,184) 0%,rgb(71,149,204) 100%);
+}
+#main .hero .download:active .big-blue-button {
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(42,106,184)),color-stop(1, rgb(71,149,204)));
+	background-image:-moz-linear-gradient(center top,rgb(42,106,184) 0%,rgb(71,149,204) 100%);
+	box-shadow:rgba(0,0,0,.25) 0 1px 1px;
+}
+#main .hero .download .big-blue-button img { vertical-align:text-bottom; margin-left:.25em; }
+
+#main .hero h1.coming-soon { padding-top:20px; }
+#main .hero img.violator { margin-top:-3px; margin-left:-3px; position:absolute; z-index:1; }
+#main .hero p.violator { width:299px; color:#666; text-align:center; }
+#main .hero p.violator strong { font-weight:normal; }
+
+
+/* Hero Gallery */
+#main .hero .gallery .gallery-view,
+#main .hero .gallery .gallery-view .gallery-content { width:inherit; }
+#main .hero .gallery .gallery-view .gallery-content figcaption { padding-bottom:5px; text-align:center; color:#888; position:relative; z-index:2; }
+#main .hero .gallery .gallery-view .gallery-content figcaption p { margin:0; padding:0 40px; }
+
+#main .hero .gallery .gallery-view .gallery-content img.right { margin-left:0; margin-bottom:-8px; behavior: url(/appletw/2011/global/scripts/lib/ie7pngfix.htc); }
+#main .hero .gallery .gallery-view .gallery-hero-1 img.right { margin-top:54px; }
+#main .hero .gallery .gallery-view .gallery-hero-2 img.right { margin-top:73px; }
+#main .hero .gallery .gallery-view .gallery-hero-3 img.right { margin-top:-3px; _position:relative; _z-index:1; }
+#main .hero .gallery .gallery-view .gallery-hero-4 img.right { margin-top:43px; }
+
+
+/* Buckets */
+#buckets { width:980px; margin:0 auto 6px; }
+#buckets .column { width:483px; margin-bottom:8px; border:1px solid #d9d9d9; }
+#buckets .column .gradient { width:auto; height:244px; padding:16px 18px 0; margin:0; border:4px solid #fff; zoom:1; }
+#buckets .column .gradient:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+#buckets:nth-child(1n) .column { width:485px; margin-bottom:10px; border:none; border-radius:0% 0% 100% 100% / 0% 0% 10px 10px; box-shadow:rgba(0,0,0,.2) 0 4px 4px; }
+#buckets:nth-child(1n) .column .gradient { box-shadow:rgba(0,0,0,.2) 0 1px 2px; }
+
+#buckets .column .gradient h2 { margin-bottom:20px; }
+#buckets .column .gradient p { width:260px; line-height:1.4285em; color:#333; }
+#buckets .column.last .gradient p { width:225px; }
+#buckets .column .gradient img { display:block; margin:0; }
+#buckets .column .gradient img.flushright { margin-right:-22px; }
+#buckets .column.first.whats-new .gradient p { width:280px; _width:260px; }
+
+#buckets .whats-new img.right { margin-top:60px; margin-right:25px; }
+#buckets .what-is img.right { margin-top:-20px; }
+#buckets .gift-cards img.right { margin-top:-21px; margin-right:5px; _position:relative; _z-index:1; }
+#buckets .apple-tv img.right { margin-top:11px; }
+
+
+/* iCloud Pullout */
+#main .icloud { width:600px; padding:26px 0 12px 380px; background:#fafafa; }
+#main .icloud:nth-child(1n) { width:601px; padding-left:381px; }
+#main .icloud:hover { background:#fff; }
+#main .icloud h1 { margin-bottom:0; font-size:1.4286em; line-height:1.2em; }
+#main .icloud img.left { margin-left:-240px; _position:relative; _z-index:1; }

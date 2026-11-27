@@ -40,7 +40,7 @@ AC.GlobalNav.canEnhance._canEnhance=(AC.Detector.isCSSAvailable("transition-prop
 }return AC.GlobalNav.canEnhance._canEnhance};AC.GlobalNav.prototype.enhanceSearch=function(){this.globalSearchForm=document.getElementById("g-search");
 if(this.globalSearchForm&&this.globalSearch){if(typeof(searchCountry)=="undefined"){searchCountry="us"
 }if(SearchShortcut.geoMap[searchCountry.toUpperCase()].directory){var c=SearchShortcut.geoMap[searchCountry.toUpperCase()].directory
-}else{if(searchCountry!="us"){var c="/"+searchCountry.replace(/_/,"")}else{c=""
+}else{if(searchCountry!="us"){var c="/appletw/2011/"+searchCountry.replace(/_/,"")}else{c=""
 }}var b={global:"http://www.apple.com"+c+"/search/",ipad:"http://www.apple.com"+c+"/search/",iphone:"http://www.apple.com"+c+"/search/",ipoditunes:"http://www.apple.com"+c+"/search/",mac:"http://www.apple.com"+c+"/search/",store:"http://www.apple.com"+c+"/search/",support:"http://www.info.apple.com/searchredir.html"};
 var a=b[searchSection]||"http://www.apple.com/search/";this.globalSearchForm.setAttribute("action",a);
 this.globalSearchForm.setAttribute("method","get");this.searchShortcut=searchShortcut=new SearchShortcut(this.globalSearchForm,this.globalSearch);

@@ -1,0 +1,114 @@
+@import url(/appletw/2011/tw/ipod/styles/ipod.css);
+
+/* product header
+------------------------*/
+.whats-new #pn-whats-new a,
+.whatis   #pn-whatis a,
+.whatson  #pn-whatson a,
+.howto    #pn-howto a { color:#999; }
+
+#whats-new #pn-whats-new a,
+#whatis   #pn-whatis a,
+#whatson  #pn-whatson a,
+#howto    #pn-howto a,
+#latino   #pn-latino a,
+.charts   #pn-charts a { color:#999 !important; text-shadow: #fff 0 1px 0; cursor:default; }
+
+.flushleft { float: left; margin-left: -50px; }
+.flushright { float: right; margin-right: -50px; }
+.flushboth { margin-left: -50px; margin-right: -50px; }
+
+img.new { position: absolute; top: 0; left: 0; }
+
+p.intro a.more { background-image: url(/appletw/2011/tw/global/elements/arrows/morearrow_med_08c.gif); }
+
+/* galleries */
+.gallery .swap { height:400px; position:relative; }
+.gallery .swap div { display:block; position:absolute; top:0px; left:0px; }
+.gallery .slide { display:none; }
+.gallery .swap .slide { display:block; position:absolute; top:0px; left:0px; }
+.gallery ul li { margin:0 5px; }
+.gallery ul.image-nav { position: relative; margin: 0 auto; }
+
+/* facebook module */
+#facebook { clear:both; overflow:hidden !important; margin:1.5em auto; padding:0; width:980px; border:1px solid #ddd; background:#f4f6f7; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+#facebook:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+#content #facebook { width:auto; }
+#facebook .fbfan { float:left; margin-bottom:-2px; width:200px; height:65px; }
+#facebook p { margin-top:1.8em; margin-bottom:0; _margin-bottom:17px; }
+#facebook a { color:#08c; }
+
+/* itunes promo */
+#itunes-promo { position: relative; min-height: 140px; _height: 140px; background: #4c4c4c url('/appletw/2011/tw/ipod/images/overview_itunes_bg20100901.png') repeat-x 0 0; padding: 28px 0 0 24px; margin: 0 -50px -18px; width: 956px; font-size: 12px; border-top: 1px solid #65686f; }
+#itunes-promo img.roundedbottomright { position: absolute; bottom: 0; right: 0; margin: 0; }
+#itunes-promo img.left { margin: -6px 9px 0 0; }
+#itunes-promo h2 { margin-bottom: 2px; }
+#itunes-promo p.intro { color: #fff; font-size: 16px; margin-bottom: 9px; word-spacing: -2px; }
+#itunes-promo p { color: #ccc; width: 425px; }
+#itunes-promo a:hover { text-decoration: none; }
+#itunes-promo em.more { color: #fff; font-style: normal; background-image: url('/appletw/2011/global/elements/arrows/morearrow_fff.gif'); }
+
+/* itunes education volume purchase program */
+#education .content { padding:4em 50px 1.6em; *padding-bottom:0; }
+#education .content, #faq .content { position: relative; }
+#education .hero, .education#faq .hero { background: #fdfdfd url(/appletw/2011/tw/itunes/education/images/app_store_hero_bg_20101116.jpg) repeat-x 0 bottom; width: 930px; _margin-right:-50px; margin-left: -50px; padding-left: 50px; margin-top: -52px; padding-bottom: 0; margin-bottom: 45px; }
+#education .hero .column.first { padding-top:64px; width:51%; }
+#education .hero .column.last, .education#faq .hero .column.last { padding-top: 44px; padding-bottom: 18px; }
+.education#faq .column.last img.lockup { margin-left: 23px; }
+#education .hero img.right { margin-right:50px; margin-bottom:0px; }
+#education .grid2cola .column.first { width:64%; }
+#education .grid2cola .column.last { font-size:12px; padding-top:24px; width:31%; }
+#education .hero h3 { margin-top:18px; }
+#education .steps { padding-top:25px; *padding-bottom:0; clear: both; }
+#education .steps p.push-up { margin-top:-12px; }
+#education .steps h2 { font-size:24px; font-weight:normal; }
+#education .steps h3 { margin-bottom: 25px; }
+#education .steps .wrapper { overflow:hidden; }
+#education .steps .column { font-size: 12px; padding-top:25px; background:url(/appletw/2011/tw/itunes/education/images/steps_divisor_20110110.jpg) no-repeat 100% 62px; padding-right:15px; width:272px; }
+#education .steps .column.step1, #education .steps .column.step2 { min-height:505px; _height:505px; }
+#education .steps .column.step2 { *width:284px; }
+#education .steps .column.last { padding-right:0; background:none; *width:260px; }
+#education .steps .column.last p { *margin-right:-10px; }
+#education .steps img.top { margin-bottom:12px; }
+#education .steps p { padding-top:4px; }
+#education .steps b { *word-spacing:-1px; }
+#education .steps p, #education .steps ul, #education .steps .step3 .more.learn, #education .steps .step2 .more.learn { padding-left:38px; padding-right:10px; }
+#education .steps .step2 .more.learn { white-space:normal; background-position:90% 80%; *background-position:95% 80%; }
+#education .steps .step1 img.top { margin-left:45px; }
+#education .steps .step2 img.top { margin-left:37px; }
+#education .steps .step3 img.top { margin-left:88px; }
+#education .steps img.left { margin-right:10px; }
+#education .steps ul li.text { padding-top:0.5em; }
+
+#education ul.push-up { margin-top:-1.2em; }
+#education #main p.nomargin { margin:0; }
+
+.education#faq a.toplink { color:#08c; background:transparent url(/appletw/2011/tw/global/elements/arrows/uparrow_08c.gif) no-repeat scroll 100% 50%; position: absolute; right: 10px; padding-right: 10px; top: -57px; }
+.education#faq h1 img { margin-top: 10px; }
+.education#faq #featurelist { width: 575px; margin-bottom:50px; border:1px solid #e5e4e4; background:#fcfcfc; -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; -khtml-border-radius:8px; padding: 12px 21px 10px; font-size: 11px; margin-top: 18px; }
+.education#faq #featurelist h4 {font-size:11px; font-weight:normal; color:#898989; margin-bottom: 6px; }
+.education#faq #featurelist a { display:block; padding-bottom:2px; font-size:11px; line-height: 23px; color:#252525; _position:relative; _zoom:1; }
+.education#faq .column.last img.appstore { position: absolute; right: 0; top: 44px; }
+.education#faq .content h2 { border-bottom:1px solid #e5e5e5; padding-top: 30px; font-size: 24px; padding-bottom: 5px; margin-bottom: 30px; }
+.education#faq .content h2#overview { padding-top: 0px; }
+.education#faq .section { position: relative; width: 100%; font-size: 12px; }
+.education#faq .section .column { position: relative; }
+.education#faq .top p.intro { margin-bottom: 0px; font-size: 12px; color: #333; width: 620px; margin-top: 0; padding-top: 3px; }
+
+/* badges */
+.content .badge { position: relative; padding: 0 8px; *padding-bottom: 1px; top: -3px; *top: -1px; z-index: 1; display: inline-block; *display: inline; *zoom: 1; font-weight: normal; text-shadow: 0 1px 0 rgba(0,0,0,.3); color: #fff; font-size: 12px; line-height: 18px; -webkit-font-smoothing: auto;
+	border: 1px solid #f88c13; border-top-color: #cf7310; border-bottom-color: #ffa312;
+	background: #ff9a13;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff8e14), to(#ffa312));
+	background: -moz-linear-gradient(top, #ff8e14, #ffa312);
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px #cf7310; -moz-box-shadow: inset 0 1px 1px #cf7310; box-shadow: inset 0 1px 1px #cf7310;
+}
+.content .badge:nth-child(1n) { border: 0; line-height: 20px; }
+
+.icloud-callout { width: 980px; margin: 0 auto 18px; padding: 0; }
+.icloud-callout a { padding: 17px 139px 1px; display: block; color: #333; text-decoration: none; }
+.icloud-callout a:hover .more { text-decoration: underline; }
+.icloud-callout .left { float: left; margin-right: 33px; }
+.icloud-callout h1 { margin-bottom: 0; font-size: 1.4em; font-weight: bold; }
+#main .icloud-callout.gradient { background: #fff; background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(237,237,237,.93))); background: -moz-linear-gradient(90deg, rgba(237,237,237,.93), rgba(255,255,255,1)); }

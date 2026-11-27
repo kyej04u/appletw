@@ -1,0 +1,6 @@
+@import url(/appletw/2011/support/css/global/nav/styles/navigation.css);
+
+#globalheader #globalnav li a span {
+	background-image:url(/appletw/2011/global/nav/images/globalnav_text.png);
+	_background-image:url(/appletw/2011/global/nav/images/globalnav_text.png);
+}

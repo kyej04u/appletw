@@ -1,0 +1,70 @@
+html, body {  background:#e6e6e6 url(/appletw/2011/v/ipod/home/a/images/gradient_texture.png) repeat 0 0; }
+
+#main { width:982px; margin:0 auto; overflow:visible; }
+
+.content { font-size:12px; line-height:21px; }
+.content h4 { font-size:1em; line-height:1.2em; }
+.sosumi { width:940px; padding:0 20px; margin:0 auto 18px; }
+.sosumi a { color:#333; }
+.flushright { margin-right:-50px; _position:relative; _z-index:1; }
+.flushleft { margin-left:-50px; _position:relative; _z-index:1; }
+
+
+/* boxes
+------------------------*/
+
+/* showcase */
+#showcase { margin-bottom:10px; }
+#showcase .content { float:left; width:320px; height:210px; padding:0; color:#888; }
+#showcase .content h2 { font-size:1.2em; font-weight:bold; }
+#showcase .content img { display:block; }
+
+#showcase .promo-lead,
+#showcase .promo-lead a { float:none; width:980px; height:410px; margin:0 0 10px; }
+#showcase .promo-lead { position:relative; }
+#showcase .promo-lead a { display:block; }
+
+#showcase .promos a { margin-bottom:0; margin-left:8px; }
+#showcase .promos a:nth-child(1n) { margin-left:10px; }
+#showcase .promos a.first { margin-left:0; }
+
+
+/* promobar */
+#promobar { clear:both; width:980px; padding:0; margin-bottom:15px; border-top:1px solid #fff; font-size:12px; line-height:1.45em; 
+	background-image:-webkit-gradient(linear, 0 0, 0 35, from(#f7f7f7), to(#fff));
+	background-image:-moz-linear-gradient(center top, #f7f7f7 0%, #fff 35px);
+}
+#promobar a { color:#85898c; }
+#promobar h4 { margin-bottom:1px; }
+#promobar p { margin-bottom:0; line-height:15px; }
+#promobar img { display:block; margin:0 auto; _position:relative; _z-index:1; }
+#promobar .column.first { border-left:none; }
+#promobar .column { position:relative; display:inline; width:165px; min-height:142px; *height:142px; margin:0; padding:16px 15px 0; border-left:1px solid #f0f0f0; z-index:0; zoom:1; }
+#promobar .column:hover {
+	background-image:-webkit-gradient(linear, 0 0, 0 70, from(#ebebeb), to(#fff));
+	background-image:-moz-linear-gradient(top, #ebebeb, #fff 70px);
+}
+
+
+/* individual promos */
+#promobar .compare    img { margin-top:11px; }
+#promobar .engrave    img { margin-top:31px; }
+#promobar .ios        img { margin-top:15px; }
+#promobar .everywhere img { margin-top:18px; }
+#promobar .education  img { margin-top:10px; }
+
+
+/* itunes module
+------------------------*/
+#itunes { position:relative; z-index:1; padding:20px 0 0 50px; margin-bottom:18px; height:304px; width:930px; font-size:14px; line-height:20px; text-shadow:0 1px #fff; background:url(/appletw/2011/v/ipod/home/a/images/itunes_bg.jpg) no-repeat 50% 0; }
+#itunes h1 { padding-top:8px; margin-bottom:0; }
+#itunes p { width:440px; margin-bottom:22px; color:#666; }
+#itunes .violator { position:absolute; z-index:1; top:0; right:0; }
+
+
+/* global footer
+------------------------*/
+#globalfooter p.sosumi { float:right; width:560px; margin:-25px 0 0; padding-right:0; color:#888; line-height:1.4em; text-align:right; *margin:-15px 0 0; }
+#globalfooter #breadory,
+#globalfooter #directorynav { border-color:#ccc; }
+

@@ -1,0 +1,38 @@
+html, body { background: #fff; font-size: 14px; line-height: 1.45em; }
+
+#overview { background: #fff; }
+#overview #main { border: none; }
+#overview #main .ios5 { width: 980px; padding: 0; background: transparent; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: none; }
+
+#overview .content header { padding: 60px 115px 20px; background: url(/appletw/2011/v/ios/a/images/overview_bg_gradient.jpg) no-repeat 0 0; }
+#overview .content header .violator { position: absolute; top: 0; left: 0; -webkit-border-top-left-radius: 4px !important; -moz-border-radius-topleft: 4px !important; border-top-left-radius: 4px !important; }
+#overview .content header hgroup h1 { margin-bottom: 58px; }
+#overview .content header hgroup .hero { margin-left: -137px; margin-right: -137px; }
+#overview .content header hgroup .intro { width:801px; margin-top: -30px; margin-right: -30px; margin-left: -30px; }
+
+#overview .content .buckets { width: 980px; min-height: 260px; border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25) inset;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.25) inset;
+	box-shadow: 0 1px 3px rgba(0,0,0,.25) inset;
+	background:#f7f7f7;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ececec));
+	background:-moz-linear-gradient(top, #fff, #ececec);
+}
+#overview .content .buckets:nth-child(1n) { border: none; } /* reset border for smart browsers */
+#overview .content .buckets .column { width: 325px; text-align: center; position: relative; border-right: 1px solid #e1e1e1; margin: 0; }
+
+#overview .content .buckets .column a { display: block; width: 285px; height: 260px; margin: 2px 0 0; padding: 23px 20px 3px; text-decoration: none; color: #555; -webkit-box-shadow: 1px 0 1px rgba(255,255,255,.50) inset; -moz-box-shadow: 1px 0 1px rgba(255,255,255,1) inset; box-shadow: 1px 0 1px rgba(255,255,255,1) inset; }
+#overview .content .buckets .column a:hover { background:rgba(255,255,255,.25); *background:#fafafa; }
+
+#overview .content .buckets .column a:hover .more { text-decoration: underline; }
+#overview .content .buckets .column h1,
+#overview .content .buckets .column a h1 { font-size: 1.4em; line-height: 1.5em; font-weight: bold; margin-bottom: 4px; }
+#overview .content .buckets .column p,
+#overview .content .buckets .column a p { margin-bottom: 28px; }
+
+#overview .content .buckets .first { width: 326px; }
+#overview .content .buckets .first a { width: 286px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+#overview .content .buckets .last { width: 247px; *width: 246px; height: 260px; padding: 25px 40px 3px; text-decoration: none; color: #555; border-right: none; }
+#overview .content #video-ios { width: 982px; position: relative; left: -117px; top: -130px; }
+#overview .content .videoswap .video-content { width: 882px; display: none; }
